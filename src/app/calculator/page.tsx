@@ -1,5 +1,6 @@
 import BMICalculator from '../components/BMICalculator';
 import CalorieCalculator from '../components/CalorieCalculator';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <CalorieCalculator />
       </section>
     </div>
+    <Footer />
     </>
   );
 }

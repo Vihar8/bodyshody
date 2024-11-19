@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import Footer from "../components/Footer";
 
 const calvesExercises = [
   {
@@ -29,6 +30,7 @@ const calvesExercises = [
 
 const CalvesExercises = () => {
   return (
+    <>
     <div className="min-h-screen bg-white text-black">
       <Navbar />
       <main className="py-12 px-6">
@@ -78,6 +80,8 @@ const CalvesExercises = () => {
         </div>
       </main>
     </div>
+    <Footer />
+    </>
   );
 };
 

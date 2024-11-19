@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import Footer from "../components/Footer";
 
 const glutesExercises = [
   {
@@ -29,14 +30,15 @@ const glutesExercises = [
 
 const GlutesExercises = () => {
   return (
+    <>
     <div className="min-h-screen bg-white text-black">
       <Navbar />
       <main className="py-12 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
           {glutesExercises.map((exercise, index) => (
             <div
-              key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200"
+            key={index}
+            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200"
             >
               {/* Card Header */}
               <div className="bg-gradient-to-r from-gray-800 to-gray-600 text-white px-6 py-4 flex justify-between items-center">
@@ -52,7 +54,7 @@ const GlutesExercises = () => {
                   src={exercise.image}
                   alt={exercise.title}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                  />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
               </div>
 
@@ -64,8 +66,8 @@ const GlutesExercises = () => {
                 <ol className="list-none space-y-4">
                   {exercise.steps.map((step, stepIndex) => (
                     <li
-                      key={stepIndex}
-                      className="flex items-start gap-4 text-gray-800"
+                    key={stepIndex}
+                    className="flex items-start gap-4 text-gray-800"
                     >
                       <AiOutlineCheckCircle className="text-green-500 text-2xl" />
                       <p className="leading-relaxed">{step}</p>
@@ -78,6 +80,8 @@ const GlutesExercises = () => {
         </div>
       </main>
     </div>
+    <Footer />
+          </>
   );
 };
 
