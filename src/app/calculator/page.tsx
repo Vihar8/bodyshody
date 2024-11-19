@@ -14,7 +14,7 @@ const Calculator = () => {
     const [calories, setCalories] = useState(null);
 
     // BMI Calculation
-    const calculateBmi = (e) => {
+    const calculateBmi = (e: React.FormEvent) => {
         e.preventDefault();
         if (height && weight) {
             const bmiValue = (weight / (height * height)).toFixed(2);
@@ -23,7 +23,7 @@ const Calculator = () => {
     };
 
     // Calorie Needs Calculation (Mifflin-St Jeor Equation)
-    const calculateCalories = (e) => {
+    const calculateCalories = (e: React.FormEvente) => {
         e.preventDefault();
         if (age && weight && height) {
             let bmr;
