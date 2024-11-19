@@ -1,0 +1,70 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements inside */
+}
+  
+  .dietSelection {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .dietCard {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border: 2px solid #3B3C36; /* Black Rose */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #F7F7F7; /* Soft Gray */
+  }
+  
+  .dietCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dietCard.selected {
+    background-color: #B05248; /* Rose Red */
+    color: white; /* White text for visibility */
+  }
+  
+  .dietCard h3 {
+    margin-top: 10px;
+    color: #2F2F2F; /* Dark Charcoal for text contrast */
+  }
+  
+  .meal {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text for titles and descriptions */
+    margin: 20px 0; /* Optional space between meals */
+  }
+  
+  .meal img {
+    width: 100%; /* Or set a fixed width if preferred */
+    max-width: 400px; /* Set a max width to scale properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .meal h2 {
+    color: #3B3C36; /* Black Rose for headings */
+  }
+  
+  .meal p {
+    color: #2F2F2F; /* Dark Charcoal for text */
+  }
+  
+  .meal ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .meal ul li {
+    margin: 5px 0;
+    color: #2F2F2F; /* Dark Charcoal for list items */
+  }
