@@ -14,6 +14,7 @@ interface DietCardProps {
   onClick: () => void;
 }
 
+type WorkoutLevel = 'beginner' | 'intermediate' | 'advanced';
 // Main component
 export default function DietPlan() {
   const [selectedDiet, setSelectedDiet] = useState<string>('muscleBuilding');
@@ -88,7 +89,6 @@ export default function DietPlan() {
     </>
   );
 }
-
 // DietCard component with prop types
 function DietCard({ title, icon, isSelected, onClick }: DietCardProps) {
   return (
@@ -101,7 +101,6 @@ function DietCard({ title, icon, isSelected, onClick }: DietCardProps) {
     </div>
   );
 }
-type WorkoutLevel = 'beginner' | 'intermediate' | 'advanced';
 // WorkoutInfo component
 function WorkoutInfo({ workoutType }: { workoutType: WorkoutLevel }) {
   const workoutPlans: Record<WorkoutLevel, { workouts: { title: string; sets: string; }[] }> = {
