@@ -101,10 +101,10 @@ function DietCard({ title, icon, isSelected, onClick }: DietCardProps) {
     </div>
   );
 }
-
+type WorkoutLevel = 'beginner' | 'intermediate' | 'advanced';
 // WorkoutInfo component
-function WorkoutInfo({ workoutType }: { workoutType: string }) {
-  const workoutPlans = {
+function WorkoutInfo({ workoutType }: { workoutType: WorkoutLevel }) {
+  const workoutPlans: Record<WorkoutLevel, { workouts: { title: string; sets: string; }[] }> = {
     beginner: {
       workouts: [
         { title: "Bodyweight Squats", sets: "3 sets of 10 reps" },
@@ -128,7 +128,7 @@ function WorkoutInfo({ workoutType }: { workoutType: string }) {
     }
   };
 
-  const workoutPlan = workoutPlans[workoutType];
+  const workoutPlan = workoutPlans[workoutType]; // TypeScript now knows workoutType is of type WorkoutLevel
   if (!workoutPlan) {
     return <p>Workout plan not found.</p>;
   }
