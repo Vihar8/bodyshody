@@ -30,23 +30,49 @@ export default function Home() {
             .body-muscle-pair:hover path {
                 fill: #fe5b7f !important;
             }
-          `,
-        }}
+            #svgContainer {
+            width: 100%; /* Use 100% width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 1093px; /* Optional: Limit max width to original size */
+            display: block;
+            margin: auto;
+          }
+
+          /* Media Queries for better responsiveness */
+          @media (max-width: 768px) { /* For tablets and mobile */
+            #svgContainer {
+              max-width: 100%; /* Allow it to adjust fully */
+              padding: 10px; /* Add padding on smaller screens */
+            }
+          }
+
+          @media (max-width: 480px) { /* For mobile phones */
+            #svgContainer {
+              height: auto; /* Ensure it's not too tall */
+              padding: 5px; /* Less padding */
+            }
+          }
+
+          /* Adjust font sizes and button styles for better touch targets */
+          .navbar {
+            font-size: 14px; /* Smaller font for mobile */
+          }
+
+          /* Additional styles to improve user experience */
+          a {
+            touch-action: manipulation; /* Improve tap targets */
+          }
+        `,
+      }}
       />
     <Navbar />
-  <section id="section1" className="">
+  <section id="section1">
     {/*?xml version="1.0" encoding="UTF-8"?*/}
     <svg
           id="svgContainer"
           xmlns="http://www.w3.org/2000/svg"
-          width="1093px"
-          height="855px"
-          style={{
-            shapeRendering: "geometricPrecision",
-            textRendering: "geometricPrecision",
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-          }}
+          viewBox="0 0 1093 855" // Set viewBox to your original SVG dimensions
+        preserveAspectRatio="xMinYMin meet" // Ensure aspect ratio preservation
         >
       {/* <g><path style="opacity:1" fill="#e6ebee" d="M -0.5,-0.5 C 363.833,-0.5 728.167,-0.5 1092.5,-0.5C 1092.5,284.5 1092.5,569.5 1092.5,854.5C 728.167,854.5 363.833,854.5 -0.5,854.5C -0.5,569.5 -0.5,284.5 -0.5,-0.5 Z"/></g> */}
       {/* traps */}
