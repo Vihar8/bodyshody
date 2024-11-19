@@ -11,3 +11,112 @@ body {
     background: var(--body-color);
     overflow-x: hidden;
 }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .main-container {
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .bmi-section, .calorie-section {
+    margin-bottom: 40px;
+  }
+  
+  .calculator-container, .bmi-calculator, .calorie-calculator {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field, .select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .submit-button {
+    background-color: #ff4d67;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .submit-button:hover {
+    background-color: #ff667a;
+  }
+  
+  .gender-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .gender-selection label {
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .bmi-result, .calorie-result {
+    background-color: #ff4d67;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .bmi-categories, .guidelines {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  h2 {
+    color: #ff4d67;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ccc;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
