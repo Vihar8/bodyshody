@@ -815,7 +815,7 @@ export default function Home() {
 
           <h2 className="text-3xl font-semibold text-blue-600 mb-4">Importance of Stretching</h2>
           <p className="text-gray-700 text-lg mb-6">
-            Don't forget to incorporate warming up and stretching before starting your workout to avoid injuries.
+            Don&apos;s forget to incorporate warming up and stretching before starting your workout to avoid injuries.
           </p>
 
           <h2 className="text-3xl font-semibold text-blue-600 mb-4">Get Started!</h2>

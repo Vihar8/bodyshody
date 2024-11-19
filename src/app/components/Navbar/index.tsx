@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaHome, FaDumbbell, FaCalculator, FaCog, FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface MenuItem {
   href: string;
@@ -24,16 +25,17 @@ const Navbar: React.FC = () => {
   return (
     <nav className="w-full bg-white text-gray-800 flex items-center justify-between mb-7 sticky top-0 z-20 shadow-md">
 
-      <div className="flex items-center space-x-2 w-28 h-28">
-        <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <img
-            src="/compony-logo.png"
-            alt="Company Logo"
-            className="transition-all duration-300"
-          />
-        </Link>
-      </div>
-
+<div className="flex items-center space-x-2 w-28 h-28">
+  <Link href="/" className="flex items-center gap-2" prefetch={false}>
+    <Image
+      src="/compony-logo.png"
+      alt="Company Logo"
+      width={112}  // Set the width (w-28)
+      height={112} // Set the height (h-28)
+      className="transition-all duration-300"
+    />
+  </Link>
+</div>
       <div className="hidden md:flex items-center space-x-4">
         {menuItems.map((item, index) => (
           <Link
