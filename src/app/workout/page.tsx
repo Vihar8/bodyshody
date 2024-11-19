@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 
 export default function DietPlan() {
   const [selectedDiet, setSelectedDiet] = useState('muscleBuilding');
+  const [selectedWorkout, setSelectedWorkout] = useState('beginner');
 
   return (
     <>
@@ -49,6 +50,33 @@ export default function DietPlan() {
         <div className={styles.dietInfo}>
           {selectedDiet && <DietInfo dietType={selectedDiet} />}
         </div>
+
+       
+        <h1>Select Your Workout Plan</h1>
+        <div className={styles.dietSelection}>
+          {/* New Workout Cards */}
+          <DietCard 
+            title="Beginner" 
+            icon="bx bx-run"
+            isSelected={selectedWorkout === 'beginner'}
+            onClick={() => setSelectedWorkout('beginner')}
+          />
+          <DietCard 
+            title="Intermediate" 
+            icon="bx bx-run"
+            isSelected={selectedWorkout === 'intermediate'}
+            onClick={() => setSelectedWorkout('intermediate')}
+            />
+          <DietCard 
+            title="Advanced" 
+            icon="bx bx-run"
+            isSelected={selectedWorkout === 'advanced'}
+            onClick={() => setSelectedWorkout('advanced')}
+          />
+        </div>
+        <div className={styles.dietInfo}>
+          {selectedWorkout && <WorkoutInfo workoutType={selectedWorkout} />}
+        </div>
       </div>
       <Footer />
     </>
@@ -64,6 +92,47 @@ function DietCard({ title, icon, isSelected, onClick }) {
       <i className={icon}></i>
       <h3>{title}</h3>
     </div>
+  );
+}
+function WorkoutInfo({ workoutType }) {
+  const workoutPlans = {
+    beginner: {
+      workouts: [
+        { title: "Bodyweight Squats", sets: "3 sets of 10 reps" },
+        { title: "Push-Ups", sets: "3 sets of 8-10 reps" },
+        { title: "Plank", sets: "3 sets of 20-30 seconds" },
+      ]
+    },
+    intermediate: {
+      workouts: [
+        { title: "Bench Press", sets: "4 sets of 8 reps" },
+        { title: "Deadlift", sets: "4 sets of 6 reps" },
+        { title: "Cool-down Stretching", sets: "5-10 mins" },
+      ]
+    },
+    advanced: {
+      workouts: [
+        { title: "Squat Clean", sets: "5 sets of 5 reps" },
+        { title: "Weighted Pull-Ups", sets: "4 sets of 6 reps" },
+        { title: "HIIT Circuit", sets: "15 mins" },
+      ]
+    }
+  };
+
+  const workoutPlan = workoutPlans[workoutType];
+  if (!workoutPlan) {
+    return <p>Workout plan not found.</p>;
+  }
+
+  return (
+    <>
+      {workoutPlan.workouts.map((workout, index) => (
+        <div key={index} className={styles.workout}>
+          <h4>{workout.title}</h4>
+          <p>{workout.sets}</p>
+        </div>
+      ))}
+    </>
   );
 }
 

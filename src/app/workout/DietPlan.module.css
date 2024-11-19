@@ -9,7 +9,46 @@
     justify-content: space-around;
     margin: 40px 0;
   }
+  .workout {
+    background-color: #f8f9fa; /* Light background for better visibility */
+    border: 1px solid #ddd; /* Slightly darker border */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 20px; /* Padding inside the card */
+    margin: 15px 0; /* Space between workout cards */
+    transition: transform 0.2s; /* Animation on hover */
+  }
   
+  .workout:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+  }
+  
+  .workout h4 {
+    color: #343a40; /* Dark text for workout title */
+    font-size: 1.5rem; /* Increase font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .workout p {
+    color: #495057; /* Darker gray for descriptions */
+    font-size: 1rem; /* Standard font size for details */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Optional: styles for responsiveness */
+  @media (max-width: 768px) {
+    .workout {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .workout h4 {
+      font-size: 1.25rem; /* Slightly smaller titles on smaller screens */
+    }
+  
+    .workout p {
+      font-size: 0.9rem; /* Adjust item descriptions for clarity */
+    }
+  }
   .dietCard {
     flex: 1;
     max-width: 300px;
