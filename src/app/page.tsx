@@ -792,39 +792,39 @@ export default function Home() {
     </svg>
   </section>
   <div className="content bg-gray-50 p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-8">
-  <h2 className="text-3xl font-semibold text-blue-600 mb-4">Learn About the Different Muscle Groups</h2>
-  <p className="text-gray-700 text-lg mb-6">
-    Understanding muscle anatomy helps you target the right areas for effective workouts.
-  </p>
+          <h2 className="text-3xl font-semibold text-blue-600 mb-4">Learn About the Different Muscle Groups</h2>
+          <p className="text-gray-700 text-lg mb-6">
+            Understanding muscle anatomy helps you target the right areas for effective workouts.
+          </p>
 
-  <h2 className="text-3xl font-semibold text-blue-600 mb-4">Target Areas and Workouts</h2>
-  <ul className="list-none pl-0 space-y-3 text-lg">
-    <li className="flex items-center text-gray-700">
-      <span className="mr-3 text-xl">🏋️‍♂️</span> Chest and Triceps
-    </li>
-    <li className="flex items-center text-gray-700">
-      <span className="mr-3 text-xl">💪</span> Back and Biceps
-    </li>
-    <li className="flex items-center text-gray-700">
-      <span className="mr-3 text-xl">🏃‍♂️</span> Legs (Quadriceps, Hamstrings, Calves)
-    </li>
-    <li className="flex items-center text-gray-700">
-      <span className="mr-3 text-xl">🧘‍♂️</span> Shoulders
-    </li>
-  </ul>
+          <h2 className="text-3xl font-semibold text-blue-600 mb-4">Target Areas and Workouts</h2>
+          <ul className="list-none pl-0 space-y-3 text-lg">
+            <li className="flex items-center text-gray-700">
+              <span className="mr-3 text-xl">🏋️‍♂️</span> Chest and Triceps
+            </li>
+            <li className="flex items-center text-gray-700">
+              <span className="mr-3 text-xl">💪</span> Back and Biceps
+            </li>
+            <li className="flex items-center text-gray-700">
+              <span className="mr-3 text-xl">🏃‍♂️</span> Legs (Quadriceps, Hamstrings, Calves)
+            </li>
+            <li className="flex items-center text-gray-700">
+              <span className="mr-3 text-xl">🧘‍♂️</span> Shoulders
+            </li>
+          </ul>
 
-  <h2 className="text-3xl font-semibold text-blue-600 mb-4">Importance of Stretching</h2>
-  <p className="text-gray-700 text-lg mb-6">
-    Don't forget to incorporate warming up and stretching before starting your workout to avoid injuries.
-  </p>
+          <h2 className="text-3xl font-semibold text-blue-600 mb-4">Importance of Stretching</h2>
+          <p className="text-gray-700 text-lg mb-6">
+            Don't forget to incorporate warming up and stretching before starting your workout to avoid injuries.
+          </p>
 
-  <h2 className="text-3xl font-semibold text-blue-600 mb-4">Get Started!</h2>
-  <p className="text-gray-700 text-lg">
-    Find a workout program that suits your goals and start your fitness journey today!
-  </p>
-</div>
-<Footer />
-  </div>
-</>
+          <h2 className="text-3xl font-semibold text-blue-600 mb-4">Get Started!</h2>
+          <p className="text-gray-700 text-lg">
+            Find a workout program that suits your goals and start your fitness journey today!
+          </p>
+        </div>
+        <Footer />
+      </div>
+    </>
  );
 }

@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 const glutesExercises = [
   {
@@ -50,10 +51,12 @@ const GlutesExercises = () => {
 
               {/* Image Section */}
               <div className="relative group">
-                <img
-                  src={exercise.image}
-                  alt={exercise.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+              <Image
+                    src={exercise.image}
+                    alt={exercise.title}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    width={600} // Set width
+                    height={256} // Set height
                   />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
               </div>
