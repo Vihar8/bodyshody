@@ -12,68 +12,69 @@ export default function Home() {
       <link rel="icon" href="/compony-logo.png" type="image/x-icon" />
       <title>Body Shody</title>
       <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            g .body-muscle-n {
-                pointer-events: all;
-                transition: fill 0.3s ease-in-out;
-            }
-            g .body-muscle-n:hover {
-                fill: white !important;
-            }
-            g .body-muscle-y {
-                pointer-events: all;
-                transition: fill 0.3s ease-in-out;
-            }
-            g .body-muscle-y:hover {
-                fill: #fe5b7f !important;
-            }
-            .body-muscle-pair:hover path {
-                fill: #fe5b7f !important;
-            }
-            #svgContainer {
-            width: 100%; /* Use 100% width */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 1093px; /* Optional: Limit max width to original size */
-            display: block;
-            margin: auto;
-          }
+  dangerouslySetInnerHTML={{
+    __html: `
+      g .body-muscle-n {
+          pointer-events: all;
+          transition: fill 0.3s ease-in-out;
+      }
+      g .body-muscle-n:hover {
+          fill: white !important;
+      }
+      g .body-muscle-y {
+          pointer-events: all;
+          transition: fill 0.3s ease-in-out;
+      }
+      g .body-muscle-y:hover {
+          fill: #fe5b7f !important;
+      }
+      .body-muscle-pair:hover path {
+          fill: #fe5b7f !important;
+      }
+      #svgContainer {
+          width: 100%; /* Full width */
+          height: auto; /* Maintain aspect ratio */
+          max-width: 1200px; /* Max width for desktop */
+          display: block;
+          margin: auto;
+      }
 
-          /* Media Queries for better responsiveness */
-          @media (max-width: 768px) { /* For tablets and mobile */
-            #svgContainer {
+      /* Media Queries for better responsiveness */
+      @media (max-width: 768px) { /* For tablets and mobile */
+          #svgContainer {
               max-width: 100%; /* Allow it to adjust fully */
+              height: 50vh; /* Control height on tablet/mobiles */
               padding: 10px; /* Add padding on smaller screens */
-            }
           }
+      }
 
-          @media (max-width: 480px) { /* For mobile phones */
-            #svgContainer {
-              height: auto; /* Ensure it's not too tall */
+      @media (max-width: 480px) { /* For mobile phones */
+          #svgContainer {
+              height: 40vh; /* Further adjust height for smaller devices */
               padding: 5px; /* Less padding */
-            }
           }
+      }
 
-          .content {
-            padding: 20px; /* General padding for content */
-            text-align: center; /* Center text */
-          }
+      .content {
+          padding: 20px; /* General padding for content */
+          text-align: center; /* Center text */
+      }
 
-          h2 {
-            margin-top: 30px;
-            font-size: 24px; /* Adjust as needed */
-          }
+      h2 {
+          margin-top: 30px;
+          font-size: 24px; /* Keep font size consistent */
+      }
 
-          p {
-            margin-bottom: 20px;
-            font-size: 16px; /* Adjust as needed */
-            line-height: 1.5;
-          }
-        `,
-      }}
-      />
+      p {
+          margin-bottom: 20px;
+          font-size: 16px; /* Keep font size consistent */
+          line-height: 1.5;
+      }
+    `,
+  }}
+/>
     <Navbar />
-  <section id="section1">
+  <section id="section1" className="mt-36">
     {/*?xml version="1.0" encoding="UTF-8"?*/}
     <svg
           id="svgContainer"
@@ -815,7 +816,7 @@ export default function Home() {
 
           <h2 className="text-3xl font-semibold text-blue-600 mb-4">Importance of Stretching</h2>
           <p className="text-gray-700 text-lg mb-6">
-            Don&apos;s forget to incorporate warming up and stretching before starting your workout to avoid injuries.
+            Don&apos;t forget to incorporate warming up and stretching before starting your workout to avoid injuries.
           </p>
 
           <h2 className="text-3xl font-semibold text-blue-600 mb-4">Get Started!</h2>
