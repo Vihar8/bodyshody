@@ -11,6 +11,3 @@ const page = () => {
 }
 
 export default page
-<h1>
-    glutes
-    </h1>

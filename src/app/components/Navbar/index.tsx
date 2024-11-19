@@ -1,17 +1,17 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FaHome, FaDumbbell, FaCalculator, FaCog, FaBars, FaTimes } from 'react-icons/fa';
 
 interface MenuItem {
   href: string;
-  icon: React.ComponentType;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; // Updated type
   name: string;
 }
 
 const Navbar: React.FC = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
@@ -32,15 +32,15 @@ const Navbar: React.FC = () => {
           />
         </Link>
       </div>
-      
+
       <div className="hidden md:flex items-center space-x-4">
         {menuItems.map((item, index) => (
           <Link
             key={index}
             href={item.href}
-            className={`flex items-center space-x-2 p-2 rounded-md ${router.pathname === item.href ? 'bg-gray-300' : 'hover:bg-gray-300'}`}
+            className={`flex items-center space-x-2 p-2 rounded-md ${pathname === item.href ? 'bg-gray-300' : 'hover:bg-gray-300'}`}
           >
-            <item.icon className="text-xl" />
+            <item.icon className="text-xl" /> {/* No type error now */}
             <span className="text-lg">{item.name}</span>
           </Link>
         ))}
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
             <Link
               key={index}
               href={item.href}
-              className={`flex items-center space-x-2 p-4 rounded-md ${router.pathname === item.href ? 'bg-gray-300' : 'hover:bg-gray-400'}`}
+              className={`flex items-center space-x-2 p-4 rounded-md ${pathname === item.href ? 'bg-gray-300' : 'hover:bg-gray-400'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               <item.icon className="text-xl" />

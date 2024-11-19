@@ -4,39 +4,53 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./compony-logo.png" type="image/x-icon" />
-  <style
-    dangerouslySetInnerHTML={{
-      __html:
-        "\n        g .body-muscle-n:hover {\n            fill: white;\n        }\n        g .body-muscle-y:hover {\n            fill: #fe5b7f;\n        }\n        .body-muscle-pair:hover path{\n                fill: #fe5b7f;\n        }\n    "
-    }}
-  />
+    
   <div className="bg-blue-100">
-  <title>Body Shody</title>
-  
+  <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/compony-logo.png" type="image/x-icon" />
+      <title>Body Shody</title>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            g .body-muscle-n {
+                pointer-events: all;
+                transition: fill 0.3s ease-in-out;
+            }
+            g .body-muscle-n:hover {
+                fill: white !important;
+            }
+            g .body-muscle-y {
+                pointer-events: all;
+                transition: fill 0.3s ease-in-out;
+            }
+            g .body-muscle-y:hover {
+                fill: #fe5b7f !important;
+            }
+            .body-muscle-pair:hover path {
+                fill: #fe5b7f !important;
+            }
+          `,
+        }}
+      />
     <Navbar />
   <section id="section1" className="">
     {/*?xml version="1.0" encoding="UTF-8"?*/}
     <svg
-      id="svgContainer"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      width="1093px"
-      height="855px"
-      style={{
-        shapeRendering: "geometricPrecision",
-        textRendering: "geometricPrecision",
-        imageRendering: "optimizeQuality",
-        fillRule: "evenodd",
-        clipRule: "evenodd"
-      }}
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
+          id="svgContainer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1093px"
+          height="855px"
+          style={{
+            shapeRendering: "geometricPrecision",
+            textRendering: "geometricPrecision",
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+          }}
+        >
       {/* <g><path style="opacity:1" fill="#e6ebee" d="M -0.5,-0.5 C 363.833,-0.5 728.167,-0.5 1092.5,-0.5C 1092.5,284.5 1092.5,569.5 1092.5,854.5C 728.167,854.5 363.833,854.5 -0.5,854.5C -0.5,569.5 -0.5,284.5 -0.5,-0.5 Z"/></g> */}
       {/* traps */}
-      <a href="./traps">
+      <a href="/traps" aria-label="Trapezius Muscle">
         <g>
           <path
             className="body-muscle-y"
@@ -47,7 +61,7 @@ export default function Home() {
         </g>
       </a>
       {/* traps middle */}
-      <a href="/trapsmiddle">
+      <a href="/trapsmiddle" aria-label="Trapezius Middle Muscle">
         <g>
           <path
             className="body-muscle-y"
