@@ -15,10 +15,10 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
-    { href: '/index.html', icon: FaHome, name: 'Home' },
-    { href: '/sections/workoutplan/workout.html', icon: FaDumbbell, name: 'Workouts' },
-    { href: '/sections/calculator.html', icon: FaCalculator, name: 'Calculator' },
-    { href: '/Loginpage/index.html', icon: FaCog, name: 'Settings' },
+    { href: '/', icon: FaHome, name: 'Home' },
+    { href: '/workout', icon: FaDumbbell, name: 'Workouts' },
+    { href: '/calculator', icon: FaCalculator, name: 'Calculator' },
+    { href: '/loginpage', icon: FaCog, name: 'Settings' },
   ];
 
   return (

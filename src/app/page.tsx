@@ -36,7 +36,7 @@ export default function Home() {
     >
       {/* <g><path style="opacity:1" fill="#e6ebee" d="M -0.5,-0.5 C 363.833,-0.5 728.167,-0.5 1092.5,-0.5C 1092.5,284.5 1092.5,569.5 1092.5,854.5C 728.167,854.5 363.833,854.5 -0.5,854.5C -0.5,569.5 -0.5,284.5 -0.5,-0.5 Z"/></g> */}
       {/* traps */}
-      <a href="./exercise card/traps.html">
+      <a href="./traps">
         <g>
           <path
             className="body-muscle-y"
@@ -47,7 +47,7 @@ export default function Home() {
         </g>
       </a>
       {/* traps middle */}
-      <a href="./exercise card/trapsmiddle.html">
+      <a href="/trapsmiddle">
         <g>
           <path
             className="body-muscle-y"
@@ -65,7 +65,7 @@ export default function Home() {
         />
       </g>
       {/* chest */}
-      <a href="./exercise card/chest.html">
+      <a href="/chest">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -82,7 +82,7 @@ export default function Home() {
         </g>
       </a>
       {/* shoulders */}
-      <a href="./exercise card/shoulder.html">
+      <a href="/shoulder">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -99,7 +99,7 @@ export default function Home() {
         </g>
       </a>
       {/* traps */}
-      <a href="./exercise card/traps.html">
+      <a href="/traps">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -185,7 +185,7 @@ export default function Home() {
         />
       </g>
       {/* biceps */}
-      <a href="./exercise card/biceps.html">
+      <a href="/biceps">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -202,7 +202,7 @@ export default function Home() {
         </g>
       </a>
       {/* obliques */}
-      <a href="./exercise card/obliques.html">
+      <a href="/obliques">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -257,7 +257,7 @@ export default function Home() {
         />
       </g>
       {/* Abs */}
-      <a href="./exercise card/abs.html">
+      <a href="/abs">
         <g>
           <path
             className="body-muscle-y"
@@ -303,7 +303,7 @@ export default function Home() {
         />
       </g>
       {/* forearm */}
-      <a href="./exercise card/forearm.html">
+      <a href="/forearm">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -334,7 +334,7 @@ export default function Home() {
         />
       </g>
       {/* quads */}
-      <a href="./exercise card/quads.html">
+      <a href="/quads">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -442,7 +442,7 @@ export default function Home() {
         />
       </g>
       {/* hamstrings */}
-      <a href="./exercise card/quads.html">
+      <a href="/hamstrings">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -459,7 +459,7 @@ export default function Home() {
         </g>
       </a>
       {/* glutes */}
-      <a href="./exercise card/quads.html">
+      <a href="/glutes">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -476,7 +476,7 @@ export default function Home() {
         </g>
       </a>
       {/* forearm */}
-      <a href="./exercise card/forearm.html">
+      <a href="/forearm">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -493,7 +493,7 @@ export default function Home() {
         </g>
       </a>
       {/* lowerback */}
-      <a href="./exercise card/traps.html">
+      <a href="/lowerback">
         <g>
           <path
             className="body-muscle-y"
@@ -504,7 +504,7 @@ export default function Home() {
         </g>
       </a>
       {/* triceps */}
-      <a href="./exercise card/triceps.html">
+      <a href="/triceps">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -521,7 +521,7 @@ export default function Home() {
         </g>
       </a>
       {/* lats */}
-      <a href="./exercise card/obliques.html">
+      <a href="/lats">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -537,7 +537,7 @@ export default function Home() {
           />
         </g>
       </a>
-      <a href="./exercise card/shoulder.html">
+      <a href="/shoulder">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
@@ -698,7 +698,7 @@ export default function Home() {
         />
       </g>
       {/* calves */}
-      <a href="./exercise card/quads.html">
+      <a href="/calves">
         <g className="body-muscle-pair">
           <path
             className="body-muscle-y"
