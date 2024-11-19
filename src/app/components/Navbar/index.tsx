@@ -22,7 +22,8 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full bg-white text-gray-800 flex items-center justify-between mb-7 fixed top-0 left-0 z-50 shadow-md">
+    <nav className="w-full bg-white text-gray-800 flex items-center justify-between mb-7 sticky top-0 z-20 shadow-md">
+
       <div className="flex items-center space-x-2 w-28 h-28">
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <img
