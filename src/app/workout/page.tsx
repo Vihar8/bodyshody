@@ -1,5 +1,4 @@
 'use client';
-// pages/dietplan.js
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -7,9 +6,18 @@ import styles from '../workout/DietPlan.module.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+// Define types for DietCard props
+interface DietCardProps {
+  title: string;
+  icon: string;
+  isSelected: boolean;
+  onClick: () => void;
+}
+
+// Main component
 export default function DietPlan() {
-  const [selectedDiet, setSelectedDiet] = useState('muscleBuilding');
-  const [selectedWorkout, setSelectedWorkout] = useState('beginner');
+  const [selectedDiet, setSelectedDiet] = useState<string>('muscleBuilding');
+  const [selectedWorkout, setSelectedWorkout] = useState<string>('beginner');
 
   return (
     <>
@@ -22,10 +30,10 @@ export default function DietPlan() {
         <link rel="icon" href="/compony-logo.png" type="image/x-icon" />
       </Head>
       <Navbar />
-      
+
       <div className={styles.container1}>
         <h1>Select Your Diet Plan</h1>
-        
+
         <div className={styles.dietSelection}>
           <DietCard 
             title="Muscle Building (Normal Weight)" 
@@ -51,10 +59,8 @@ export default function DietPlan() {
           {selectedDiet && <DietInfo dietType={selectedDiet} />}
         </div>
 
-       
         <h1>Select Your Workout Plan</h1>
         <div className={styles.dietSelection}>
-          {/* New Workout Cards */}
           <DietCard 
             title="Beginner" 
             icon="bx bx-run"
@@ -66,7 +72,7 @@ export default function DietPlan() {
             icon="bx bx-run"
             isSelected={selectedWorkout === 'intermediate'}
             onClick={() => setSelectedWorkout('intermediate')}
-            />
+          />
           <DietCard 
             title="Advanced" 
             icon="bx bx-run"
@@ -83,7 +89,8 @@ export default function DietPlan() {
   );
 }
 
-function DietCard({ title, icon, isSelected, onClick }) {
+// DietCard component with prop types
+function DietCard({ title, icon, isSelected, onClick }: DietCardProps) {
   return (
     <div 
       className={`${styles.dietCard} ${isSelected ? styles.selected : ''}`} 
@@ -94,7 +101,9 @@ function DietCard({ title, icon, isSelected, onClick }) {
     </div>
   );
 }
-function WorkoutInfo({ workoutType }) {
+
+// WorkoutInfo component
+function WorkoutInfo({ workoutType }: { workoutType: string }) {
   const workoutPlans = {
     beginner: {
       workouts: [
@@ -136,7 +145,8 @@ function WorkoutInfo({ workoutType }) {
   );
 }
 
-function DietInfo({ dietType }) {
+// DietInfo component
+function DietInfo({ dietType }: { dietType: string }) {
   const dietPlans = {
     muscleBuilding: {
       meals: [
@@ -250,7 +260,8 @@ function DietInfo({ dietType }) {
   );
 }
 
-function Meal({ title, description, imageSrc, items }) {
+// Meal component
+function Meal({ title, description, imageSrc, items }: { title: string; description: string; imageSrc: string; items: string[] }) {
   return (
     <div className={styles.meal}>
       <h2>{title}</h2>
