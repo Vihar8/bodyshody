@@ -56,7 +56,6 @@ const GlutesExercises = () => {
                      loop
                      muted
                     className="w-full h-64 object-cover transition-transform duration-300"
-                    controls
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 </div>
