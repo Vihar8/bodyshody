@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
       </div>
 
       <div className={`md:hidden fixed top-0 right-0 h-full bg-white text-black flex flex-col items-center p-16 transition-transform duration-300 ${isMenuOpen ? 'w-1/2' : 'w-0'} ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <button onClick={() => setIsMenuOpen(false)} className="absolute top-12 right-7 text-2xl">
+        <button onClick={() => setIsMenuOpen(false)} className="absolute top-7 right-7 text-2xl">
           <FaTimes />
         </button>
         <div className="flex flex-col w-full h-full justify-center items-center">
