@@ -8,25 +8,40 @@ import Image from "next/image";
 
 const obliquesExercises = [
   {
-    title: "Side Plank",
+    title: "Dumbbell Russian Twist Front",
     difficulty: "Intermediate",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    video: "./Dumbbells-dumbbell-russian-twist-front.mp4", // Path to your video file
     steps: [
-      "Lie on your side with your legs stacked and your elbow directly beneath your shoulder.",
-      "Lift your hips off the ground, keeping your body in a straight line.",
-      "Hold the position for the desired time and then lower your hips.",
+      "Sit on the floor with your knees bent and feet flat, holding a dumbbell with both hands in front of your chest.",
+      "Lean back slightly and lift your feet off the ground to engage your core.",
+      "Twist your torso to one side, bringing the dumbbell towards the floor beside your hip.",
+      "Return to the center and twist to the other side, keeping your core engaged and controlling the movement.",
+      "Repeat the motion for the desired number of repetitions."
     ],
   },
   {
-    title: "Russian Twists",
-    difficulty: "Novice",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    title: "Dumbbell Weighted Hand Side Plank",
+    difficulty: "Advanced",
+    video: "./dumbbell-weighted-hand-side-plank-side.mp4", // Path to your video file
     steps: [
-      "Sit on the floor with your knees bent and feet flat.",
-      "Hold a weight or medicine ball in front of you.",
-      "Lean back slightly and twist your torso from side to side.",
+      "Start in a side plank position with one elbow on the ground and the other arm extended upwards holding a dumbbell.",
+      "Stack your legs and hips, keeping your body in a straight line from head to heels.",
+      "Slowly raise the dumbbell towards the ceiling, keeping your arm fully extended.",
+      "Engage your core and keep your body stable as you lower the dumbbell back down.",
+      "Perform the movement for the desired number of repetitions, then switch sides."
     ],
   },
+  {
+    title: "Dumbbell Side Plank Up-Down",
+    difficulty: "Advanced",
+    video: "./dumbbell-side-plank-up-down-side.mp4", // Path to your video file
+    steps: [
+      "Start in a side plank position with one elbow on the ground and the other hand holding a dumbbell in front of your chest.",
+      "Lift your body into a side plank, keeping your body in a straight line from head to heels.",
+      "With the dumbbell in hand, extend your arm straight up towards the ceiling.",
+      "Lower your arm back down to the starting position and repeat the movement while maintaining proper alignment and core engagement."
+    ],
+  }  
 ];
 
 const ObliquesExercises = () => {
@@ -51,6 +66,7 @@ const ObliquesExercises = () => {
 
               {/* Image Section */}
               <div className="relative group">
+              {exercise.image ? (
               <Image
                     src={exercise.image}
                     alt={exercise.title}
@@ -58,6 +74,17 @@ const ObliquesExercises = () => {
                     width={600} // Set width
                     height={256} // Set height
                   />
+                ) : (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  >
+                    <source src={exercise.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
               </div>
 
