@@ -1,0 +1,46 @@
+.container1 {
+    max-width: 800px;
+    margin: 40px auto; /* Added more margin for better spacing */
+    background-color: #fff;
+    padding: 30px; /* Increased padding for breathing space */
+    border-radius: 12px; /* Slightly increased the roundness */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  }
+  
+  .meal img {
+    display: block;
+    margin: 20px auto; /* Added spacing around the image */
+    border-radius: 12px; /* Matching rounded corners with the container */
+  }
+  
+  .meal {
+    margin-bottom: 40px; /* Increased spacing between meals */
+  }
+  
+  .meal h2 {
+    margin-bottom: 15px; /* Better spacing below headings */
+    font-size: 1.8rem; /* Slightly larger for emphasis */
+    color: #fe5b7f;
+    text-align: center;
+  }
+  
+  .meal p {
+    margin: 10px 0 20px; /* Added space above and below description */
+    color: #555; /* Slightly darker text for better readability */
+    font-size: 1rem; /* Comfortable font size */
+    text-align: center;
+  }
+  
+  .meal ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0; /* Reset margin for cleaner layout */
+    color: #333; /* Slightly darker color for better readability */
+  }
+  
+  .meal ul li {
+    margin-bottom: 10px; /* Added spacing between list items */
+    font-size: 1rem; /* Slightly larger for better readability */
+  }
+  

@@ -1,276 +1,414 @@
-'use client';
 import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
-import styles from '../workout/DietPlan.module.css';
+import styles from '../workout/WorkoutPlan.module.css'; // Ensure to create this CSS file
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-// Define types for DietCard props
-interface DietCardProps {
-  title: string;
-  icon: string;
-  isSelected: boolean;
-  onClick: () => void;
-}
-
-type WorkoutLevel = 'beginner' | 'intermediate' | 'advanced';
-// Main component
-export default function DietPlan() {
-  const [selectedDiet, setSelectedDiet] = useState<string>('muscleBuilding');
-  const [selectedWorkout, setSelectedWorkout] = useState<string>('beginner');
-
+export default function WorkoutPlan() {
   return (
     <>
       <Head>
-        <title>Body Shody</title>
-        <link
-          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-          rel="stylesheet"
-        />
-        <link rel="icon" href="/compony-logo.png" type="image/x-icon" />
+        <title>Workout Plans</title>
       </Head>
       <Navbar />
+      <div className={styles.container}>
+        <h1 className={styles.title}>Workout Plans</h1>
 
-      <div className={styles.container1}>
-        <h1>Select Your Diet Plan</h1>
 
-        <div className={styles.dietSelection}>
-          <DietCard 
-            title="Muscle Building (Normal Weight)" 
-            icon="bx bx-dumbbell"
-            isSelected={selectedDiet === 'muscleBuilding'}
-            onClick={() => setSelectedDiet('muscleBuilding')}
-          />
-          <DietCard 
-            title="Fat Loss (Overweight)" 
-            icon="bx bx-shape-square" 
-            isSelected={selectedDiet === 'fatLoss'}
-            onClick={() => setSelectedDiet('fatLoss')}
-          />
-          <DietCard 
-            title="Weight Gain (Underweight)" 
-            icon="bx bx-heart" 
-            isSelected={selectedDiet === 'weightGain'}
-            onClick={() => setSelectedDiet('weightGain')}
-          />
-        </div>
+        <section>
+          <h2 className={styles.subtitle}>Beginners Workout Plan</h2>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Workout</th>
+                <th>Sets x Reps</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Monday */}
+              <tr>
+                <td>Monday</td>
+                <td>
+                  Upper Body Strength
+                  <ul>
+                    <li>Bench Press</li>
+                    <li>Bent Over Rows</li>
+                    <li>Overhead Press</li>
+                    <li>Bicep Curls</li>
+                    <li>Tricep Dips</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>4 x 8-10</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 12-15</li>
+                    <li>3 x 12-15</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Tuesday */}
+              <tr>
+                <td>Tuesday</td>
+                <td>
+                  Cardio and Core
+                  <ul>
+                    <li>30 min moderate-intensity cardio</li>
+                    <li>Plank</li>
+                    <li>Russian Twists</li>
+                    <li>Leg Raises</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>30 min</li>
+                    <li>3 x 60 sec</li>
+                    <li>3 x 20 (10 each side)</li>
+                    <li>3 x 15</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Wednesday */}
+              <tr>
+                <td>Wednesday</td>
+                <td>Rest Day</td>
+                <td>-</td>
+              </tr>
+              {/* Thursday */}
+              <tr>
+                <td>Thursday</td>
+                <td>
+                  Lower Body Strength
+                  <ul>
+                    <li>Squats</li>
+                    <li>Deadlifts</li>
+                    <li>Lunges</li>
+                    <li>Leg Press</li>
+                    <li>Calf Raises</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>4 x 8-10</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 12-15 (each leg)</li>
+                    <li>3 x 12-15</li>
+                    <li>3 x 15-20</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Friday */}
+              <tr>
+                <td>Friday</td>
+                <td>
+                  Cardio and HIIT
+                  <ul>
+                    <li>20 min HIIT</li>
+                    <li>20 min steady-state cardio</li>
+                    <li>Jumping Jacks</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>20 min</li>
+                    <li>20 min</li>
+                    <li>3 x 1 min</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Saturday */}
+              <tr>
+                <td>Saturday</td>
+                <td>
+                  Full Body Circuit
+                  <ul>
+                    <li>Push-ups</li>
+                    <li>Bodyweight Squats</li>
+                    <li>Pull-ups or Lat Pulldowns</li>
+                    <li>Plank</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>3 x 15</li>
+                    <li>3 x 20</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 60 sec</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Sunday */}
+              <tr>
+                <td>Sunday</td>
+                <td>Rest Day or Active Recovery</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-        <div className={styles.dietInfo}>
-          {selectedDiet && <DietInfo dietType={selectedDiet} />}
-        </div>
-
-        <h1>Select Your Workout Plan</h1>
-        <div className={styles.dietSelection}>
-          <DietCard 
-            title="Beginner" 
-            icon="bx bx-run"
-            isSelected={selectedWorkout === 'beginner'}
-            onClick={() => setSelectedWorkout('beginner')}
-          />
-          <DietCard 
-            title="Intermediate" 
-            icon="bx bx-run"
-            isSelected={selectedWorkout === 'intermediate'}
-            onClick={() => setSelectedWorkout('intermediate')}
-          />
-          <DietCard 
-            title="Advanced" 
-            icon="bx bx-run"
-            isSelected={selectedWorkout === 'advanced'}
-            onClick={() => setSelectedWorkout('advanced')}
-          />
-        </div>
-        <div className={styles.dietInfo}>
-          {selectedWorkout && <WorkoutInfo workoutType={selectedWorkout} />}
-        </div>
+        <section>
+          <h2 className={styles.subtitle}>Intermediate Workout Plan</h2>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Workout</th>
+                <th>Sets x Reps</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Monday */}
+              <tr>
+                <td>Monday</td>
+                <td>
+                  Chest and Triceps
+                  <ul>
+                    <li>Barbell Bench Press</li>
+                    <li>Incline Dumbbell Press</li>
+                    <li>Cable Flyes</li>
+                    <li>Tricep Rope Pushdowns</li>
+                    <li>Overhead Tricep Extension</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>3 x 10-12</li>
+                    <li>3 x 8-10</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 30 sec</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* tuesday */}
+              <tr>
+                <td>tuesday</td>
+                <td>
+                  Back and Biceps
+                  <ul>
+                    <li>Deadlifts</li>
+                    <li>Lat Pulldowns</li>
+                    <li>Barbell Rows</li>
+                    <li>Hammer Curls</li>
+                    <li>Preacher Curls</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>30 min</li>
+                    <li>3 x 15</li>
+                    <li>3 x 15</li>
+                    <li>4 x 10-12</li>
+                    <li>3 x 12-15</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Wednesday */}
+              <tr>
+                <td>Wednesday</td>
+                <td>Active Recovery or Rest Day</td>
+                <td></td>
+              </tr>
+              {/* thursday */}
+              <tr>
+                <td>thursday</td>
+                <td>
+                  Legs and Shoulders
+                  <ul>
+                    <li>Squats</li>
+                    <li> Leg Press</li>
+                    <li>Tricep DipsLunges</li>
+                    <li>Shoulder Press</li>
+                    <li>Lateral Raises</li>
+                    <li>Face Pulls</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>20-30 min</li>
+                    <li>3 x 12-15</li>
+                    <li>3 x 12-15</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Friday */}
+              <tr>
+                <td>Friday</td>
+                <td>
+                  Cardio and Core
+                  <ul>
+                    <li> 30 minutes of moderate-intensity cardio</li>
+                    <li> Plank</li>
+                    <li>Russian Twists</li>
+                    <li>Hanging Leg Raises</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li></li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12 (each leg)</li>
+                    <li>20-30 min</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Saturday */}
+              <tr>
+                <td>Saturday</td>
+                <td>
+                  Full Body Hypertrophy
+                  <ul>
+                    <li> 3 Dumbbell Bench Press</li>
+                    <li>  Pull-ups or Lat Pulldowns</li>
+                    <li>Leg Extensions</li>
+                    <li>seated Dumbbell Shoulder Press</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li></li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12</li>
+                    <li>3 x 10-12 </li>
+                    <li>3 x 10-12</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Sunday */}
+              <tr>
+                <td>Sunday</td>
+                <td>Active Recovery or Rest Day</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2 className={styles.subtitle}>Advanced Workout Plan</h2>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Workout</th>
+                <th>Sets x Reps</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Monday */}
+              <tr>
+                <td>Monday</td>
+                <td>
+                  Heavy Compound Movements
+                  <ul>
+                    <li>Squats</li>
+                    <li>Deadlifts</li>
+                    <li>Bench Press</li>
+                    <li>Bent Over Rows</li>
+                    <li>Overhead Press</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>5 x 5</li>
+                    <li>5 x 5</li>
+                    <li>5 x 5</li>
+                    <li>4 x 6-8</li>
+                    <li>4 x 6-8</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Tuesday */}
+              <tr>
+                <td>Tuesday</td>
+                <td>
+                  Hypertrophy Focus - Upper Body
+                  <ul>
+                    <li>Incline Dumbbell Press</li>
+                    <li>Pull-ups</li>
+                    <li>Pendlay Rows</li>
+                    <li>Dumbbell Shoulder Press</li>
+                    <li>Tricep Dips</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>4 x 8-10</li>
+                    <li>4 x 8-10</li>
+                    <li>4 x 8-10</li>
+                    <li>4 x 10-12</li>
+                    <li>3 x 12-15</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Wednesday */}
+              <tr>
+                <td>Wednesday</td>
+                <td>Active Recovery or Rest Day</td>
+                <td></td>
+              </tr>
+              {/* Thursday */}
+              <tr>
+                <td>Thursday</td>
+                <td>
+                  Power and Speed Training
+                  <ul>
+                    <li>Power Cleans</li>
+                    <li>Box Jumps</li>
+                    <li>Medicine Ball Throws</li>
+                    <li>Sprints (30 seconds)</li>
+                    <li>Plank Variations</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>5 x 3</li>
+                    <li>4 x 8</li>
+                    <li>3 x 10</li>
+                    <li>8 x 30 sec (rest 60 sec)</li>
+                    <li>3 x 1 minute</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Friday */}
+              <tr>
+                <td>Friday</td>
+                <td>
+                  Hypertrophy Focus - Lower Body
+                  <ul>
+                    <li>Front Squats</li>
+                    <li>Romanian Deadlifts</li>
+                    <li>Bulgarian Split Squats</li>
+                    <li>Leg Press</li>
+                    <li>Calf Raises</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>4 x 8-10</li>
+                    <li>4 x 8-10</li>
+                    <li>3 x 12-15 (each leg)</li>
+                    <li>3 x 12-15</li>
+                    <li>4 x 15-20</li>
+                  </ul>
+                </td>
+              </tr>
+              {/* Saturday */}
+              <tr>
+                <td>Saturday</td>
+                <td>Strength and Endurance</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </div>
       <Footer />
     </>
-  );
-}
-// DietCard component with prop types
-function DietCard({ title, icon, isSelected, onClick }: DietCardProps) {
-  return (
-    <div 
-      className={`${styles.dietCard} ${isSelected ? styles.selected : ''}`} 
-      onClick={onClick}
-    >
-      <i className={icon}></i>
-      <h3>{title}</h3>
-    </div>
-  );
-}
-// WorkoutInfo component
-function WorkoutInfo({ workoutType }: { workoutType: WorkoutLevel }) {
-  const workoutPlans: Record<WorkoutLevel, { workouts: { title: string; sets: string; }[] }> = {
-    beginner: {
-      workouts: [
-        { title: "Bodyweight Squats", sets: "3 sets of 10 reps" },
-        { title: "Push-Ups", sets: "3 sets of 8-10 reps" },
-        { title: "Plank", sets: "3 sets of 20-30 seconds" },
-      ]
-    },
-    intermediate: {
-      workouts: [
-        { title: "Bench Press", sets: "4 sets of 8 reps" },
-        { title: "Deadlift", sets: "4 sets of 6 reps" },
-        { title: "Cool-down Stretching", sets: "5-10 mins" },
-      ]
-    },
-    advanced: {
-      workouts: [
-        { title: "Squat Clean", sets: "5 sets of 5 reps" },
-        { title: "Weighted Pull-Ups", sets: "4 sets of 6 reps" },
-        { title: "HIIT Circuit", sets: "15 mins" },
-      ]
-    }
-  };
-
-  const workoutPlan = workoutPlans[workoutType]; // TypeScript now knows workoutType is of type WorkoutLevel
-  if (!workoutPlan) {
-    return <p>Workout plan not found.</p>;
-  }
-
-  return (
-    <>
-      {workoutPlan.workouts.map((workout, index) => (
-        <div key={index} className={styles.workout}>
-          <h4>{workout.title}</h4>
-          <p>{workout.sets}</p>
-        </div>
-      ))}
-    </>
-  );
-}
-
-// DietInfo component
-function DietInfo({ dietType }: { dietType: string }) {
-  const dietPlans = {
-    muscleBuilding: {
-      meals: [
-        {
-          title: "Breakfast",
-          description: "Start your day with a healthy breakfast.",
-          imageSrc: "/normal1.jpg",
-          items: [
-            '1. Warm water + Dry Fruits + Black Gram + Sprout + 1 Apple (8:00 AM)',
-            'After Exercise',
-            '1. Oats With Cow Milk + Poha or Upma'
-          ]
-        },
-        {
-          title: "Lunch",
-          description: "Keep your energy up during the day.",
-          imageSrc: "/normal2.jpg",
-          items: [
-            '1. Brown Rice + Dal + Salad + Buttermilk (1:00 PM)',
-            '2. Multigrain Biscuits + Green Tea (4:00 PM)',
-            '3. Fruit Juice / Egg White (6:00 PM)'
-          ]
-        },
-        {
-          title: "Dinner",
-          description: "End your day with a balanced meal.",
-          imageSrc: "/normal3.jpg",
-          items: ['1. Salad / Sprout / Soya Milk / Soya Paneer (9:00 PM)']
-        }
-      ]
-    },
-    fatLoss: {
-      meals: [
-        {
-          title: "Breakfast",
-          description: "Start your day with a low-calorie breakfast.",
-          imageSrc: "/over1.jpg",
-          items: [
-            '1. Green Tea + Oatmeal with Fruits (8:00 AM)',
-            'After Exercise',
-            '1. Scrambled Eggs with Spinach'
-          ]
-        },
-        {
-          title: "Lunch",
-          description: 'Maintain energy with a healthy lunch.',
-          imageSrc: '/over2.jpg',
-          items: [
-            '1. Quinoa Salad with Vegetables (1:00 PM)',
-            '2. Grilled Chicken with Broccoli (4:00 PM)',
-            '3. Mixed Fruit (6:00 PM)'
-          ]
-        },
-        {
-          title: 'Dinner',
-          description: 'Finish your day lighter for better digestion.',
-          imageSrc: '/over3.jpg',
-          items: ['1. Vegetable Stir Fry (9:00 PM)']
-        }
-      ]
-    },
-    weightGain: {
-      meals: [
-        {
-          title: "Breakfast",
-          description: "High-calorie breakfast to start your day.",
-          imageSrc: "/under1.jpg",
-          items: [
-            '1. Whole Milk + Peanut Butter + Banana (8:00 AM)',
-            'After Exercise',
-            '1. Oats with Almonds and Honey'
-          ]
-        },
-        {
-          title: "Lunch",
-          description: "Fuel your day with rich nutrients.",
-          imageSrc: "/under2.jpg",
-          items: [
-            '1. Rice + Chicken / Paneer + Veggies (1:00 PM)',
-            '2. Nut Mix with Dried Fruits (4:00 PM)',
-            '3. Protein Shake (6:00 PM)'
-          ]
-        },
-        {
-          title: "Dinner",
-          description: "Finish strong with a hearty meal.",
-          imageSrc: "/under3.jpg",
-          items: ['1. Pasta with Cheese and Meat (9:00 PM)']
-        }
-      ]
-    }
-  };
-
-  const dietPlan = dietPlans[dietType];
-  if (!dietPlan) {
-    return <p>Diet plan not found.</p>;
-  }
-
-  return (
-    <>
-      {dietPlan.meals.map((meal, index) => (
-        <Meal 
-          key={index} 
-          title={meal.title} 
-          description={meal.description} 
-          imageSrc={meal.imageSrc} 
-          items={meal.items} 
-        />
-      ))}
-    </>
-  );
-}
-
-// Meal component
-function Meal({ title, description, imageSrc, items }: { title: string; description: string; imageSrc: string; items: string[] }) {
-  return (
-    <div className={styles.meal}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Image src={imageSrc} alt={title} width={400} height={250} />
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
   );
 }
