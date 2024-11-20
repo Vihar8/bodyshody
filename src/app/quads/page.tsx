@@ -66,7 +66,6 @@ const QuadsExercises = () => {
 
                 {/* Image Section */}
                 <div className="relative group">
-                  {exercise.image ? (
                     <Image
                       src={exercise.image}
                       alt={exercise.title}
@@ -74,17 +73,6 @@ const QuadsExercises = () => {
                       width={600} // Set width
                       height={256} // Set height
                     />
-                  ) : (
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                    >
-                      <source src={exercise.video} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 </div>
 
