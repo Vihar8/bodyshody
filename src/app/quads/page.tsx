@@ -6,11 +6,13 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
+// This could be the correct structure for all exercises, either `image` or `video`
 const quadsExercises = [
   {
     title: "Dumbbell Bulgarian Split Squat",
     difficulty: "Intermediate",
-    image: "/Dumbbell-Bulgarian-Split-Squat.gif", // Corrected path
+    image: "/Dumbbell-Bulgarian-Split-Squat.gif", // Correct path
+    video: "", // Empty string if no video
     steps: [
       "Stand a few feet away from a bench, holding a dumbbell in each hand by your sides.",
       "Place one foot on the bench behind you, keeping the other foot firmly planted on the ground.",
@@ -22,7 +24,8 @@ const quadsExercises = [
   {
     title: "Dumbbell Front Rack Squat",
     difficulty: "Intermediate",
-    image: "/Dumbbell-Front-Rack-Squat.gif", // Corrected path
+    image: "/Dumbbell-Front-Rack-Squat.gif", // Correct path
+    video: "", // Empty string if no video
     steps: [
       "Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.",
       "Brace your core and squat down, keeping your chest up and your knees tracking over your toes.",
@@ -34,7 +37,8 @@ const quadsExercises = [
   {
     title: "Dumbbell Glute Bridge",
     difficulty: "Beginner",
-    image: "/Dumbbell-Glute-Bridge.gif", // Corrected path
+    image: "/Dumbbell-Glute-Bridge.gif", // Correct path
+    video: "", // Empty string if no video
     steps: [
       "Lie on your back with your knees bent and feet flat on the floor, holding a dumbbell over your hips.",
       "Press through your heels and lift your hips towards the ceiling, squeezing your glutes at the top.",
@@ -66,6 +70,7 @@ const QuadsExercises = () => {
 
                 {/* Image Section */}
                 <div className="relative group">
+                  {exercise.image ? (
                     <Image
                       src={exercise.image}
                       alt={exercise.title}
@@ -73,6 +78,17 @@ const QuadsExercises = () => {
                       width={600} // Set width
                       height={256} // Set height
                     />
+                  ) : exercise.video ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    >
+                      <source src={exercise.video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : null}
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 </div>
 
