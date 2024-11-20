@@ -26,7 +26,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Body Shody - Get Fit" />
         <meta property="og:description" content="Achieve your fitness goals with Body Shody. Explore exercises, nutrition tips, and workout plans tailored for you!" />
-        <meta property="og:image" content="https://ibb.co/SKxDx0m" /> {/* Replace with a valid image URL */}
+        <meta property="og:image" content="https://i.ibb.co/SKxDx0m/bodyshody.png" /> {/* Replace with a valid image URL */}
         <meta property="og:url" content="https://bodyshody.vercel.app/" />
         <meta property="og:site_name" content="Body Shody" />
 
@@ -38,3 +38,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
