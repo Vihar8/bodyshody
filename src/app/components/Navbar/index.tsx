@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
     { href: '/workout', icon: FaDumbbell, name: 'Workouts' },
     { href: '/calculator', icon: FaCalculator, name: 'Calculator' },
     { href: '/dietplan', icon: FaAppleAlt, name: 'Diet' }, // Added Diet menu item
-    { href: '/loginpage', icon: FaCog, name: 'Settings' },
+    { href: '/setting', icon: FaCog, name: 'Settings' },
   ];
 
   return (
