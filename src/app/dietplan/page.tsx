@@ -5,6 +5,28 @@ import styles from '../dietplan/DietPlan.module.css'; // Ensure to include your 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+type MealProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  items: string[];
+};
+
+function Meal({ title, description, imageSrc, items }: MealProps) {
+  return (
+    <div className={styles.meal}>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <Image src={imageSrc} alt={title} width={400} height={250} />
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function DietPlan() {
   return (
     <>
@@ -48,7 +70,7 @@ export default function DietPlan() {
           imageSrc="/normal3.jpg"
           items={['1. Salad / Sprout / Soya Milk / Soya Paneer (9:00 PM)']}
         />
-        
+
         {/* Weight Loss Diet Section */}
         <h1>Weight Loss Diet</h1>
         <Meal
@@ -57,8 +79,8 @@ export default function DietPlan() {
           imageSrc="/over1.jpg"
           items={[
             '1. Warm water + Lemon (7:00 AM)',
-            '2. Dry Fruits +1 Apple (8:00 AM)',
-            '3. Oats with milk / Upma (9:00 AM)',
+            '2. Dry Fruits +1 Apple (8:00 AM)',
+            '3. Oats with milk / Upma (9:00 AM)',
           ]}
         />
         <hr />
@@ -67,9 +89,9 @@ export default function DietPlan() {
           description="Light and nutritious fare for lunchtime."
           imageSrc="/over2.jpg"
           items={[
-            '1. Brown Rice + Dal + Salad + Butter Milk (1:00 PM)',
-            '2. Multigrain Biscuits + Green Tea (4:00 PM)',
-            '3. Fruit Juice / Egg White (6:00 PM)',
+            '1. Brown Rice + Dal + Salad + Butter Milk (1:00 PM)',
+            '2. Multigrain Biscuits + Green Tea (4:00 PM)',
+            '3. Fruit Juice / Egg White (6:00 PM)',
           ]}
         />
         <hr />
@@ -78,10 +100,10 @@ export default function DietPlan() {
           description="End your day with low-carb options."
           imageSrc="/over3.jpg"
           items={[
-             '1. Salad / Sprouts / Soya Milk / Soya Panner + Salad Full Plate + Butter Milk. (9:00PM)'
+            '1. Salad / Sprouts / Soya Milk / Soya Paneer + Salad Full Plate + Butter Milk. (9:00 PM)',
           ]}
         />
-        
+
         {/* Weight Gain Diet Section */}
         <h1>Weight Gain Diet</h1>
         <Meal
@@ -89,9 +111,8 @@ export default function DietPlan() {
           description="Start your day with calorie-rich foods."
           imageSrc="/under1.jpg"
           items={[
-            '1. Oats + Banana Milk Shake (8:00 AM).',
-            '2. (4 - 6 Bread with Butter or Cheese) (10:00 AM)'
-
+            '1. Oats + Banana Milk Shake (8:00 AM).',
+            '2. (4 - 6 Bread with Butter or Cheese) (10:00 AM)',
           ]}
         />
         <hr />
@@ -100,11 +121,9 @@ export default function DietPlan() {
           description="Boost your calorie intake at lunch."
           imageSrc="/under2.jpg"
           items={[
-            '1. Dal Rice + Salad + Butter Milk / Boil Chicken / Fish Rice + Salad + Butter Milk (1:00 PM)',
-
-            '2. Peanut Butter + Oats Biscuits / Panner / Dates (4:00 PM)',
-
-            '3. Fruits / Eggs (6:00 PM)'
+            '1. Dal Rice + Salad + Butter Milk / Boil Chicken / Fish Rice + Salad + Butter Milk (1:00 PM)',
+            '2. Peanut Butter + Oats Biscuits / Paneer / Dates (4:00 PM)',
+            '3. Fruits / Eggs (6:00 PM)',
           ]}
         />
         <hr />
@@ -113,26 +132,11 @@ export default function DietPlan() {
           description="Include high-calorie choices in your dinner."
           imageSrc="/under3.jpg"
           items={[
-            '1. 2-3 Chapati + Dal + salad + Banana / Tanduri chicken with Chapati (9:00 PM)'
+            '1. 2-3 Chapati + Dal + Salad + Banana / Tandoori Chicken with Chapati (9:00 PM)',
           ]}
         />
       </div>
       <Footer />
     </>
-  );
-}
-
-function Meal({ title, description, imageSrc, items }) {
-  return (
-    <div className={styles.meal}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Image src={imageSrc} alt={title} width={400} height={250} />
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
   );
 }
