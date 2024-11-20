@@ -10,7 +10,7 @@ const bicepsExercises = [
   {
     title: "Barbell Curl",
     difficulty: "Novice",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    image: "/Dumbbell-Curl.gif", // Replace with your image URL
     steps: [
       "Stand tall holding a barbell with palms facing upwards.",
       "Curl the barbell towards your chest while contracting your biceps.",
@@ -20,9 +20,19 @@ const bicepsExercises = [
   {
     title: "Dumbbell Hammer Curl",
     difficulty: "Intermediate",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    image: "/Dumbbell-Hammer-Curl.gif", // Replace with your image URL
     steps: [
       "Hold a dumbbell in each hand with your palms facing each other.",
+      "Curl the dumbbells towards your shoulders while keeping your elbows still.",
+      "Slowly lower the dumbbells back down to the starting position.",
+    ],
+  },
+  {
+    title: "Dumbbell Reverse Curl",
+    difficulty: "Intermediate",
+    image: "/Dumbbell-Reverse-Curl.gif", // Replace with your image URL
+    steps: [
+      "Hold a dumbbell in each hand with your palms facing down (pronated grip).",
       "Curl the dumbbells towards your shoulders while keeping your elbows still.",
       "Slowly lower the dumbbells back down to the starting position.",
     ],
