@@ -74,7 +74,7 @@ const QuadsExercises = () => {
                     <Image
                       src={exercise.image}
                       alt={exercise.title}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-64 object-cover transition-transform duration-300  "
                       width={600} // Set width
                       height={256} // Set height
                     />
@@ -83,7 +83,7 @@ const QuadsExercises = () => {
                       autoPlay
                       loop
                       muted
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-64 object-cover transition-transform duration-300  "
                     >
                       <source src={exercise.video} type="video/mp4" />
                       Your browser does not support the video tag.

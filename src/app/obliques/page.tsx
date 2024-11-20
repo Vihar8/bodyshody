@@ -70,7 +70,7 @@ const ObliquesExercises = () => {
                     autoPlay
                     loop
                     muted
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300  "
                   >
                     <source src={exercise.video} type="video/mp4" />
                     Your browser does not support the video tag.

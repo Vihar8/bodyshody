@@ -54,7 +54,7 @@ const GlutesExercises = () => {
               <Image
                     src={exercise.image}
                     alt={exercise.title}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-64 object-cover transition-transform duration-300  "
                     width={600} // Set width
                     height={256} // Set height
                   />

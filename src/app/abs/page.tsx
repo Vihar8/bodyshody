@@ -64,7 +64,7 @@ const Home = () => {
                     autoPlay
                     loop
                     muted
-                    className="w-full h-auto sm:max-h-48 md:max-h-64 lg:max-h-80 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
+                    className="w-full h-auto sm:max-h-48 md:max-h-64 lg:max-h-80 object-cover transition-transform duration-300   rounded-lg"
                   >
                     <source src={exercise.video} type="video/mp4" />
                     Your browser does not support the video tag.
