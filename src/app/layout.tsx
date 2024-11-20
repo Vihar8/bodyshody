@@ -54,8 +54,6 @@ export default function RootLayout({
         <meta property="og:image" content="https://ibb.co/SKxDx0m" /> {/* Replace with your actual image URL */}
          <meta property="og:site_name" content="Body Shody" />
         
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
