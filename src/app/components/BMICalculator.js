@@ -20,14 +20,14 @@ export default function BMICalculator() {
       <form onSubmit={calculateBMI}>
         <input
           type="number"
-          placeholder="Centimeters"
+          placeholder="Height in Centimeters"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
           className="input-field"
         />
         <input
           type="number"
-          placeholder="Kilograms"
+          placeholder="Weight in Kilograms"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
           className="input-field"
