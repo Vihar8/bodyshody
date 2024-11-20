@@ -8,25 +8,41 @@ import Image from "next/image";
 
 const trapsMiddleExercises = [
   {
-    title: "Shrugs",
+    title: "Dumbbell Rear Delt Row Side",
     difficulty: "Intermediate",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    video: "./Dumbbells-dumbbell-rear-delt-row-side.mp4", // Path to your video file
     steps: [
-      "Stand with your feet shoulder-width apart, holding a barbell with arms extended.",
-      "Shrug your shoulders up as high as possible.",
-      "Hold at the top for a second, then lower back down slowly.",
+      "Sit on a bench with a dumbbell in each hand, palms facing each other, and slightly bend your knees.",
+      "Lean forward at the waist, keeping your back straight, and hold the dumbbells with your arms extended toward the floor.",
+      "Pull the dumbbells toward your torso, focusing on squeezing your shoulder blades together. Keep your elbows wide.",
+      "Slowly lower the dumbbells back to the starting position, maintaining control and proper form.",
+      "Repeat the movement for the desired number of repetitions, focusing on engaging the rear delts."
     ],
   },
   {
-    title: "Face Pulls",
-    difficulty: "Novice",
-    image: "https://via.placeholder.com/600", // Replace with your image URL
+    title: "Dumbbell Row Bilateral Side",
+    difficulty: "Intermediate",
+    video: "./Dumbbells-dumbbell-row-bilateral-side.mp4", // Path to your video file
     steps: [
-      "Set a rope attachment on a cable machine at face height.",
-      "Grab the rope with both hands and pull towards your face, elbows out.",
-      "Slowly return the rope to the starting position.",
+      "Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your palms facing each other.",
+      "Hinge at the hips, keeping a neutral spine, and slightly bend your knees while extending your arms straight toward the ground.",
+      "Pull both dumbbells toward your torso, focusing on using your back muscles to perform the movement. Keep your elbows close to your body.",
+      "Slowly return the dumbbells to the starting position, maintaining control throughout the movement.",
+      "Repeat for the desired number of repetitions, ensuring that your back remains straight and core engaged."
     ],
   },
+  {
+    title: "Dumbbell Silverback Shrug Side",
+    difficulty: "Advanced",
+    video: "./Dumbbells-dumbbell-silverback-shrug-side.mp4", // Path to your video file
+    steps: [
+      "Stand with your feet shoulder-width apart, holding a dumbbell in each hand with your arms fully extended at your sides.",
+      "Engage your core and keep your chest up as you shrug both shoulders upward, aiming to touch your ears with your shoulders.",
+      "Pause briefly at the top of the movement, squeezing your traps, then lower the dumbbells back to the starting position.",
+      "Repeat the movement for the desired number of repetitions, focusing on control and engaging the traps throughout."
+    ],
+  },
+  
 ];
 
 const TrapsMiddleExercises = () => {
@@ -49,17 +65,21 @@ const TrapsMiddleExercises = () => {
                 </div>
               </div>
 
-              {/* Image Section */}
-              <div className="relative group">
-              <Image
-                    src={exercise.image}
-                    alt={exercise.title}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                    width={600} // Set width
-                    height={256} // Set height
-                  />
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
-              </div>
+             
+                {/* Video Section */}
+                <div className="relative group">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-auto sm:max-h-48 md:max-h-64 lg:max-h-80 object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
+                  >
+                    <source src={exercise.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300 rounded-lg"></div>
+                </div>
+
 
               {/* Steps Section */}
               <div className="px-6 py-6">
