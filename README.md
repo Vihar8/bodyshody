@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🏋️‍♂️ Body Shody
 
-First, run the development server:
+Your Personal Fitness Journey Companion
 
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+[View Demo](https://body-shody.vercel.app) • [Report Bug](https://github.com/your-username/body-shody/issues) • [Request Feature](https://github.com/your-username/body-shody/issues)
+
+![Body Shody Preview](https://via.placeholder.com/800x400)
+
+</div>
+
+## ✨ Features
+
+### 🎯 Personalized Workout Plans
+- Customized programs for different fitness levels
+- Video demonstrations of exercises
+
+### 💪 Muscle Group Explorer
+- Interactive muscle anatomy guides
+- Targeted exercise recommendations
+- Form guidance and best practices
+- Injury prevention tips
+
+### 🧮 Fitness Calculators
+- BMI (Body Mass Index) calculator
+- Body fat percentage estimator
+- Calorie needs calculator
+- 1RM (One Rep Max) predictor
+
+### 🥗 Nutrition & Wellness
+- Meal planning suggestions
+- Supplement guides
+- Recovery techniques
+- Healthy lifestyle tips
+
+## 🚀 Quick Start
+
+### Prerequisites
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/body-shody.git
+```
+
+2. Navigate to project directory
+```bash
+cd body-shody
+```
+
+3. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend Framework:** Next.js
+- **Styling:** CSS Modules
+- **Deployment:** Vercel
+- **Version Control:** Git
+- **Package Manager:** npm/yarn
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+Distributed under the MIT License. See `LICENSE` for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div align="center">
+Made with ❤️ by Vihar Modi
+</div>
