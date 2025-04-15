@@ -1,8 +1,17 @@
+'use client';
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { FaMars, FaVenus } from 'react-icons/fa';
+import { useState } from "react";
 
 export default function Home() {
+  const [gender, setGender] = useState<'Male' | 'Female'>('Male');
+
+  const toggleGender = () => {
+    setGender((prev) => (prev === 'Male' ? 'Female' : 'Male'));
+  };
+
   const muscleGroups = [
     {
       name: "Upper Body Power",
@@ -103,8 +112,29 @@ export default function Home() {
           }}
         />
         <Navbar />
+        <div className="flex flex-col items-center space-y-2">
+          {/* Toggle Switch */}
+          <div
+            onClick={toggleGender}
+            className={`w-20 h-10 rounded-full flex items-center px-1 cursor-pointer transition-colors duration-300 ${gender === 'Male' ? 'bg-blue-500' : 'bg-pink-500'
+              }`}
+          >
+            <div
+              className={`w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center transform transition-transform duration-300 ${gender === 'Male' ? 'translate-x-0' : 'translate-x-10'
+                }`}
+            >
+              {gender === 'Male' ? (
+                <FaMars className="text-blue-500" />
+              ) : (
+                <FaVenus className="text-pink-500" />
+              )}
+            </div>
+          </div>
+        </div>
+      
+    {( gender == "Male"  &&  
+       <section id="section1" className="mt-5">
           <h1 className="font-bold text-xl text-blue-900 justify-center flex">Male</h1>
-        <section id="section1" className="mt-10">
           {/*?xml version="1.0" encoding="UTF-8"?*/}
           <svg
             id="svgContainer"
@@ -821,12 +851,13 @@ export default function Home() {
               />
             </g>
           </svg>
-        </section>
+        </section>)}
 
         <br />
 
+        {( gender == "Female"  &&   
         <section id="section1">
-        <h1 className="font-bold text-xl text-blue-900 justify-center flex">Female</h1>
+       <h1 className="font-bold text-xl text-pink-500 justify-center flex">Female</h1>
         {/* <svg viewBox="0 0 1566 1556" version="1.1" xmlns="http://www.w3.org/2000/svg" > */}
         <svg
             id="svgContainer"
@@ -1194,10 +1225,10 @@ export default function Home() {
               fill="#ffffff" d="M 1028 1254 Q 1030.7 1252.9 1030 1255.5 L 1041 1276 L 1044.5 1278 L 1049 1278 Q 1050.6 1280.1 1050 1285.5 L 1049 1286.5 L 1049 1294.5 L 1045 1316.5 L 1044 1332.5 L 1043 1333.5 L 1043 1344.5 L 1042 1345.5 L 1041 1373.5 L 1040 1374.5 L 1040 1393.5 L 1039 1394.5 L 1038 1440.5 L 1037 1441.5 L 1037 1456.5 L 1036 1457.5 Q 1036.9 1467.4 1035 1473 L 1021.5 1477 L 1009.5 1477 Q 990.9 1470.1 978 1457.5 Q 976.8 1452.3 979.5 1451 Q 991.7 1446.7 999 1437.5 L 1003 1428.5 L 1005 1417.5 L 1005 1404.5 L 1006 1403.5 L 1006 1349.5 L 1005 1348.5 L 1005 1327.5 L 1004 1326.5 L 1002 1288.5 L 1001 1287.5 L 1000 1272.5 L 998 1264.5 L 1000 1265.5 L 1003.5 1270 L 1012.5 1271 L 1023 1262.5 L 1028 1254 Z " />
           </g>
         </svg>
-        </section>
+        </section> )}
 
 
-     <div className="bg-gray-50 p-8 rounded-lg shadow-lg w-full mx-auto">
+    <div className="bg-gray-50 p-8 rounded-lg shadow-lg w-full mx-auto">
       <h1 className="text-4xl font-bold text-gray-800 mb-2">Master Your Muscle Groups</h1>
       <p className="text-gray-600 text-xl mb-8 border-b pb-4">Unlock your potential by targeting specific muscle groups with effective training strategies</p>
       
