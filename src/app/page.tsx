@@ -131,7 +131,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      
+
+        {/* Male Structure */}
     {( gender == "Male"  &&  
        <section id="section1" className="mt-5">
           <h1 className="font-bold text-xl text-blue-900 justify-center flex">Male</h1>
@@ -854,7 +855,7 @@ export default function Home() {
         </section>)}
 
         <br />
-
+        {/* Female Structure */}
         {( gender == "Female"  &&   
         <section id="section1">
        <h1 className="font-bold text-xl text-pink-500 justify-center flex">Female</h1>
@@ -923,7 +924,7 @@ export default function Home() {
             </g>
           </a>
 
-
+            {/* shoulder Muscle */}
           <a href="/shoulder" aria-label="back shoulder">
           <g className="body-muscle-pair">
               <path
@@ -937,7 +938,7 @@ export default function Home() {
             </g>
           </a>
 
-
+            {/* Lower Back */}
           <a href="/lowerback" aria-label="upper back">
             <g>
               <path
@@ -947,6 +948,7 @@ export default function Home() {
             </g>
           </a>
 
+            {/* shoulder Muscle */}
           <a href="/shoulder" aria-label="front shoulder">
           <g className="body-muscle-pair">
               <path
@@ -959,7 +961,7 @@ export default function Home() {
                 fill="#e7e7e7" d="M 515.5 397 L 528.5 397 L 539.5 400 L 553 410.5 L 558 417.5 L 569 440.5 L 581 477.5 L 579.5 477 Q 564.5 470 553.5 459 L 500 406.5 L 498 401 L 503.5 399 L 514.5 398 L 515.5 397 Z " />
             </g>
           </a>
-
+            {/* back lat Muscle */}
           <a href="/lats" aria-label="back lat">
           <g className="body-muscle-pair">
               <path
@@ -973,7 +975,7 @@ export default function Home() {
             </g>
           </a>
 
-
+            {/* chest Muscle */}
           <a href="/chest" aria-label="chest">
           <g className="body-muscle-pair">
               <path
@@ -987,7 +989,7 @@ export default function Home() {
             </g>
           </a>
 
-
+          {/* Triceps Muscle */}
           <a href="/triceps" aria-label="triceps">
           <g className="body-muscle-pair">
               <path
@@ -1001,6 +1003,7 @@ export default function Home() {
             </g>
           </a>
 
+            {/* biceps Muscle */}
           <a href="/biceps" aria-label="biceps">
           <g className="body-muscle-pair">
               <path
@@ -1015,7 +1018,7 @@ export default function Home() {
           </a>
 
 
-
+            {/* oblique Muscle */}
           <a href="/obliques" aria-label="oblique">
           <g className="body-muscle-pair">
               <path
