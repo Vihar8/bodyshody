@@ -156,9 +156,9 @@ const Navbar: React.FC = () => {
               <Image
                 src="/compony-logo.png"
                 alt="Company Logo"
-                width={90}
-                height={90}
-                className="my-2"
+                width={120}
+                height={120}
+                className="my-2 mt-10"
                 priority
               />
             </Link>

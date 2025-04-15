@@ -116,11 +116,11 @@ export default function Home() {
           {/* Toggle Switch */}
           <div
             onClick={toggleGender}
-            className={`w-20 h-10 rounded-full flex items-center px-1 cursor-pointer transition-colors duration-300 ${gender === 'Male' ? 'bg-blue-500' : 'bg-pink-500'
+            className={`w-16 h-8 rounded-full flex items-center px-1 cursor-pointer transition-colors duration-300 ${gender === 'Male' ? 'bg-blue-500' : 'bg-pink-500'
               }`}
           >
             <div
-              className={`w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center transform transition-transform duration-300 ${gender === 'Male' ? 'translate-x-0' : 'translate-x-10'
+              className={`w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center transform transition-transform duration-300 ${gender === 'Male' ? 'translate-x-0' : 'translate-x-8'
                 }`}
             >
               {gender === 'Male' ? (
@@ -858,7 +858,7 @@ export default function Home() {
         <br />
         {/* Female Structure */}
         {( gender == "Female"  &&   
-        <section id="section1" className="ml-4 -mt-8 w-full">
+        <section id="section1" className="ml-4 -mt-12 w-full">
         {/* <svg viewBox="0 0 1566 1556" version="1.1" xmlns="http://www.w3.org/2000/svg" > */}
         <svg
             id="svgContainer"
