@@ -15,7 +15,7 @@ export default function WorkoutPlan() {
 
 
         <section>
-          <h2 className={styles.subtitle}>Beginners Workout Plan</h2>
+          <h2 className={styles.subtitle}>1. Beginners Workout Plan</h2>
           <table className={styles.table}>
             <thead>
               <tr>
@@ -149,7 +149,7 @@ export default function WorkoutPlan() {
         </section>
 
         <section>
-          <h2 className={styles.subtitle}>Intermediate Workout Plan</h2>
+          <h2 className={styles.subtitle}>2. Intermediate Workout Plan</h2>
           <table className={styles.table}>
             <thead>
               <tr>
@@ -184,7 +184,7 @@ export default function WorkoutPlan() {
               </tr>
               {/* tuesday */}
               <tr>
-                <td>tuesday</td>
+                <td>Tuesday</td>
                 <td>
                   Back and Biceps
                   <ul>
@@ -213,7 +213,7 @@ export default function WorkoutPlan() {
               </tr>
               {/* thursday */}
               <tr>
-                <td>thursday</td>
+                <td>Thursday</td>
                 <td>
                   Legs and Shoulders
                   <ul>
@@ -290,7 +290,7 @@ export default function WorkoutPlan() {
           </table>
         </section>
         <section>
-          <h2 className={styles.subtitle}>Advanced Workout Plan</h2>
+          <h2 className={styles.subtitle}>3. Advanced Workout Plan</h2>
           <table className={styles.table}>
             <thead>
               <tr>
