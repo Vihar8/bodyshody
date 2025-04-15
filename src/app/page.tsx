@@ -130,12 +130,13 @@ export default function Home() {
               )}
             </div>
           </div>
+          {( gender == "Female" &&<h1 className="font-bold text-xl text-pink-500 justify-center flex">Female</h1>)}
+       {( gender == "Male" && <h1 className="font-bold text-xl text-blue-900 justify-center flex">Male</h1>)}
         </div>
 
         {/* Male Structure */}
     {( gender == "Male"  &&  
        <section id="section1" className="mt-5">
-          <h1 className="font-bold text-xl text-blue-900 justify-center flex">Male</h1>
           {/*?xml version="1.0" encoding="UTF-8"?*/}
           <svg
             id="svgContainer"
@@ -857,8 +858,7 @@ export default function Home() {
         <br />
         {/* Female Structure */}
         {( gender == "Female"  &&   
-        <section id="section1">
-       <h1 className="font-bold text-xl text-pink-500 justify-center flex">Female</h1>
+        <section id="section1" className="ml-4 -mt-8 w-full">
         {/* <svg viewBox="0 0 1566 1556" version="1.1" xmlns="http://www.w3.org/2000/svg" > */}
         <svg
             id="svgContainer"
