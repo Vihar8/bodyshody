@@ -855,10 +855,9 @@ export default function Home() {
           </svg>
         </section>)}
 
-        <br />
         {/* Female Structure */}
         {( gender == "Female"  &&   
-        <section id="section1" className="ml-4 -mt-12 w-full">
+        <section id="section1" className="ml-4 -mt-6 w-full">
         {/* <svg viewBox="0 0 1566 1556" version="1.1" xmlns="http://www.w3.org/2000/svg" > */}
         <svg
             id="svgContainer"
