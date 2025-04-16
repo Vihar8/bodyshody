@@ -5409,13 +5409,25 @@ export default function Page () {
 
               <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 151.5 59 L 173.5 65 L 180 69.5 L 181 79.5 L 174 97.5 L 169.5 102 L 163.5 105 L 156.5 105 L 147 100 L 139 81.5 L 139 71.5 L 142 65 L 151.5 59 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 183.5 74 Q 186.3 75.3 185 80.5 L 182.5 85 L 182 82.5 L 183.5 74 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 183.5 74 Q 186.3 75.3 185 80.5 L 182.5 85 L 182 82.5 L 183.5 74 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 135.5 75 L 138 85.5 L 137 85.5 Q 133.2 82.4 135.5 75 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 135.5 75 L 138 85.5 L 137 85.5 Q 133.2 82.4 135.5 75 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 101.5 158 L 104 158.5 L 100.5 163 L 99 159.5 L 101.5 158 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 101.5 158 L 104 158.5 L 100.5 163 L 99 159.5 L 101.5 158 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 215.5 158 L 220 159 L 219.5 164 L 215.5 158 Z " />
+<path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 215.5 158 L 220 159 L 219.5 164 L 215.5 158 Z " />
 
               <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 159.5 164 L 168 170.5 L 159.5 172 L 152 170.5 L 158 166.5 L 159.5 164 Z " />
 
