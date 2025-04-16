@@ -631,7 +631,7 @@ export default function WorkoutPlan() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gray-800 text-white">
       <Head>
         <title>Fitness Journey | Workout Plans</title>
         <meta name="description" content="Customized workout plans for all fitness levels" />
@@ -641,7 +641,7 @@ export default function WorkoutPlan() {
       
       <main className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Workout Plans</h1>
+          <h1 className="text-4xl font-bold mb-4 text-white">Workout Plans</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Choose a workout plan that matches your fitness level and goals. Each plan is designed to help you progress steadily and achieve optimal results.
           </p>
@@ -751,17 +751,7 @@ export default function WorkoutPlan() {
             </div>
           </div>
         </div>
-        
-        {/* CTA Section */}
-        <div className="mt-12 bg-green-400 text-black p-8 rounded-lg text-center">
-          <h2 className="text-2xl font-bold mb-4">Need a Custom Workout Plan?</h2>
-          <p className="mb-6 max-w-2xl mx-auto">Our fitness experts can create a personalized workout plan tailored to your specific goals, fitness level, and schedule.</p>
-          <button className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-900 transition-colors">
-            Get a Custom Plan
-          </button>
-        </div>
-      </main>
-      
+      </main>    
       <Footer />
     </div>
   );
