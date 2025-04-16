@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { FaMars, FaVenus } from 'react-icons/fa';
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [gender, setGender] = useState<'Male' | 'Female'>('Male');
@@ -130,9 +131,12 @@ export default function Home() {
               )}
             </div>
           </div>
-          {( gender == "Female" &&<h1 className="font-bold text-xl text-pink-500 justify-center flex">Female</h1>)}
-       {( gender == "Male" && <h1 className="font-bold text-xl text-blue-900 justify-center flex">Male</h1>)}
+          {( gender == "Female" &&<h1 className="font-bold text-sm text-pink-500 justify-center flex">Female</h1>)}
+       {( gender == "Male" && <h1 className="font-bold text-sm text-blue-900 justify-center flex">Male</h1>)}
         </div>
+            <Link href="/advancestructure" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2">
+      Advance Structure
+      </Link>
 
         {/* Male Structure */}
     {( gender == "Male"  &&  
@@ -1228,7 +1232,6 @@ export default function Home() {
           </g>
         </svg>
         </section> )}
-
 
     <div className="bg-gray-50 p-8 rounded-lg shadow-lg w-full mx-auto">
       <h1 className="text-4xl font-bold text-gray-800 mb-2">Master Your Muscle Groups</h1>
