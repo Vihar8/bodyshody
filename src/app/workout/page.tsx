@@ -413,7 +413,6 @@
 //   );
 // }|
 
-
 'use client';
 import { useState } from 'react';
 import Head from 'next/head';
@@ -421,14 +420,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function WorkoutPlan() {
-  const [activeTab, setActiveTab] = useState("beginner");
-  
+  // Define a type for the keys of workout plans
+  type WorkoutPlanKeys = keyof typeof workoutPlans;
+
+  const [activeTab, setActiveTab] = useState<WorkoutPlanKeys>("beginner"); // Specify the type for activeTab
+
   const workoutPlans = {
     beginner: {
       title: "Beginner Workout Plan",
       description: "Perfect for those new to fitness. Focus on building foundational strength and proper form.",
-      schedule: [ 
-        // Schedule data goes here (as previously specified)
+      schedule: [
         {
           day: "Monday",
           title: "Upper Body Strength",
@@ -496,7 +497,6 @@ export default function WorkoutPlan() {
       title: "Intermediate Workout Plan",
       description: "For those who have mastered the basics and want to push their fitness further.",
       schedule: [
-        // Intermediate plan exercises (as previously specified)
         {
           day: "Monday",
           title: "Chest and Triceps",
@@ -567,7 +567,6 @@ export default function WorkoutPlan() {
       title: "Advanced Workout Plan",
       description: "Designed for experienced fitness enthusiasts looking to maximize strength and performance.",
       schedule: [
-        // Advanced plan exercises (as previously specified)
         {
           day: "Monday",
           title: "Heavy Compound Movements",
@@ -654,7 +653,7 @@ export default function WorkoutPlan() {
             {Object.keys(workoutPlans).map((level) => (
               <button
                 key={level}
-                onClick={() => setActiveTab(level)}
+                onClick={() => setActiveTab(level as WorkoutPlanKeys)}
                 className={`px-6 py-3 font-medium transition-all ${
                   activeTab === level
                     ? "bg-green-400 text-black"
