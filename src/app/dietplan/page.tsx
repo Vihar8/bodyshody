@@ -137,7 +137,6 @@
 // }
 
 
-// pages/dietplan.js
 'use client'
 import Head from 'next/head';
 import Image from 'next/image';
@@ -251,11 +250,13 @@ const dietPlans = [
 ];
 
 function DietPlan() {
-  const [activePlan, setActivePlan] = useState('muscle-building');
+  const [activePlan, setActivePlan] = useState(dietPlans[0].id); // Default to the first plan
 
   const getActivePlan = () => {
     return dietPlans.find(plan => plan.id === activePlan);
   };
+
+  const activePlanDetails = getActivePlan();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -297,12 +298,12 @@ function DietPlan() {
         {/* Active Diet Plan */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="bg-black text-white p-6">
-            <h2 className="text-2xl font-bold">{getActivePlan().title}</h2>
-            <p className="text-blue-100 mt-2">{getActivePlan().description}</p>
+            <h2 className="text-2xl font-bold">{activePlanDetails ? activePlanDetails.title : 'Plan Not Found'}</h2>
+            <p className="text-blue-100 mt-2">{activePlanDetails ? activePlanDetails.description : 'No description available.'}</p>
           </div>
 
           <div className="p-6">
-            {getActivePlan().meals.map((meal, index) => (
+            {activePlanDetails && activePlanDetails.meals.map((meal, index) => (
               <div key={index} className="mb-10 last:mb-0">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3 relative h-64 rounded-lg overflow-hidden">
@@ -323,7 +324,7 @@ function DietPlan() {
                         {meal.items.map((item, i) => (
                           <li key={i} className="flex items-start">
                             <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-black border-[3px] border-[#4ade80] text-white text-xs font-medium mr-3">
-                              {i+1}
+                              {i + 1}
                             </span>
                             <span className="text-gray-900 mb-4">{item.replace(/^\d+\.\s/, '')}</span>
                           </li>
@@ -333,7 +334,7 @@ function DietPlan() {
                   </div>
                 </div>
 
-                {index < getActivePlan().meals.length - 1 && (
+                {index < activePlanDetails.meals.length - 1 && (
                   <div className="my-8 border-b border-gray-200"></div>
                 )}
               </div>
