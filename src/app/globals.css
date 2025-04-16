@@ -15,7 +15,7 @@ body {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0e0e0;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     color: #333;
@@ -61,8 +61,8 @@ body {
   }
   
   .submit-button {
-    background-color: #ff4d67;
-    color: #fff;
+    background-color: #4ADE80;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -72,7 +72,7 @@ body {
   }
   
   .submit-button:hover {
-    background-color: #ff667a;
+    background-color: #4ADE80;
   }
   
   .gender-selection {
@@ -87,8 +87,8 @@ body {
   }
   
   .bmi-result, .calorie-result {
-    background-color: #ff4d67;
-    color: #fff;
+    background-color: #4ADE80;
+    color: #000000;
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -101,7 +101,7 @@ body {
   }
   
   h2 {
-    color: #ff4d67;
+    color: #4ADE80;
     margin-bottom: 10px;
   }
   

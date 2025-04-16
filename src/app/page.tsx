@@ -44,7 +44,7 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="bg-blue-50">
+      <div className="bg-white">
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/compony-logo.png" type="image/x-icon" />
@@ -1244,7 +1244,7 @@ export default function Home() {
             <p className="text-gray-700 font-medium mb-2">{group.primary}</p>
             <ul className="space-y-1">
               {group.exercises.map((exercise, i) => (
-                <li key={i} className="text-gray-600">• {exercise}</li>
+                <li key={i} className="text-gray-600">{exercise}</li>
               ))}
             </ul>
           </div>
@@ -1293,10 +1293,10 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-gray-800 mb-3">Getting Started</h2>
           <p className="text-gray-600 mb-4">Begin with a balanced program targeting all major muscle groups:</p>
           <ul className="space-y-1 text-gray-600">
-            <li>• Start with 2-3 sessions per week</li>
-            <li>• Focus on proper form over heavy weight</li>
-            <li>• Include 5-10 minute warmup</li>
-            <li>• Cool down with 5-10 minutes of stretching</li>
+            <li>Start with 2-3 sessions per week</li>
+            <li>Focus on proper form over heavy weight</li>
+            <li>Include 5-10 minute warmup</li>
+            <li>Cool down with 5-10 minutes of stretching</li>
           </ul>
         </div>
       </div>

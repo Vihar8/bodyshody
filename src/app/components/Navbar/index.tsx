@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
                 href={item.href}
                 className={`flex items-center space-x-2 px-4 h-full transition-all duration-200 ${
                   pathname === item.href 
-                    ? 'bg-blue-100 text-blue-900 font-medium border-b-4 border-blue-600' 
+                    ? 'bg-black text-white font-medium border-b-4 border-green-400' 
                     : 'hover:bg-gray-100'
                 }`}
                 aria-current={pathname === item.href ? 'page' : undefined}
@@ -187,7 +187,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center h-full">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className="menu-button text-2xl p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="menu-button text-2xl p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"
               aria-expanded={isMenuOpen}
               aria-label="Toggle menu"
             >
@@ -213,7 +213,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-end mb-6">
             <button 
               onClick={() => setIsMenuOpen(false)} 
-              className="text-2xl p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="text-2xl p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"
               aria-label="Close menu"
             >
               <FaTimes />
@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
                 href={item.href}
                 className={`flex items-center space-x-4 p-4 rounded-md transition-colors ${
                   pathname === item.href 
-                    ? 'bg-blue-100 text-blue-900 font-medium' 
+                    ? 'bg-black text-white font-medium border-b-4 border-green-400' 
                     : 'hover:bg-gray-100'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
