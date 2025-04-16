@@ -717,40 +717,6 @@ export default function WorkoutPlan() {
             ))}
           </div>
         </div>
-        
-        {/* Workout Tips */}
-        <div className="mt-12 bg-gray-900 rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-6 flex items-center">
-            <span className="w-8 h-8 rounded-full bg-green-400 text-black flex items-center justify-center mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-            </span>
-            Tips for Success
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-bold text-green-400 mb-2">Prioritize Form</h3>
-              <p className="text-gray-300">Always focus on proper form over lifting heavier weights. This prevents injury and ensures you're targeting the right muscles.</p>
-            </div>
-            
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-bold text-green-400 mb-2">Progressive Overload</h3>
-              <p className="text-gray-300">Gradually increase weight, reps, or sets over time to continue challenging your muscles and making progress.</p>
-            </div>
-            
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-bold text-green-400 mb-2">Rest & Recovery</h3>
-              <p className="text-gray-300">Give your muscles time to recover between workouts. Quality sleep and proper nutrition are essential parts of your fitness journey.</p>
-            </div>
-            
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-bold text-green-400 mb-2">Stay Consistent</h3>
-              <p className="text-gray-300">Consistency is key to seeing results. Stick to your workout plan and make adjustments as needed to fit your schedule.</p>
-            </div>
-          </div>
-        </div>
       </main>    
       <Footer />
     </div>
