@@ -134,9 +134,11 @@ export default function Home() {
           {( gender == "Female" &&<h1 className="font-bold text-sm text-pink-500 justify-center flex">Female</h1>)}
        {( gender == "Male" && <h1 className="font-bold text-sm text-blue-900 justify-center flex">Male</h1>)}
         </div>
+        <div className='m-2 w-[200px]'>
             <Link href="/advancestructure" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2">
       Advance Structure
       </Link>
+      </div>
 
         {/* Male Structure */}
     {( gender == "Male"  &&  

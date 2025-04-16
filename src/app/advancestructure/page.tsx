@@ -103,13 +103,15 @@ export default function Page () {
                   {( gender == "Female" &&<h1 className="font-bold text-sm text-pink-500 justify-center flex">Female</h1>)}
                {( gender == "Male" && <h1 className="font-bold text-sm text-blue-900 justify-center flex">Male</h1>)}
                 </div>
-                <Link href="/" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2">
+                <div className='m-2 w-[200px]'>
+               <Link href="/" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2">
       Normal Structure
       </Link>
+                </div>
                 
                  {/* Male Structure */}
                 {( gender == "Male"  &&  
-                     <section id="section1" className="ml-4 -mt-6 w-full">
+                     <section id="section1" className="ml-4 mt-4 w-full">
     <svg viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg">
       
       <path fill="rgb(229,234,237)" stroke="rgb(229,234,237)" stroke-width="1" opacity="1" d="M 162.5 26 L 165 26.5 L 162.5 27 L 162.5 26 Z " />
@@ -3002,7 +3004,7 @@ export default function Page () {
 
  {/* Female Structure */}
  {( gender == "Female" &&
-  <section id="section1" className="ml-4 -mt-6 w-full">
+  <section id="section1" className="ml-4 mt-4 w-full">
   <svg viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 154.5 30 L 157 30.5 L 154.5 31 L 154.5 30 Z " />
   
