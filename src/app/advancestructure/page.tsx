@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { FaMars, FaVenus } from 'react-icons/fa';
+import { FaArrowRight, FaMars, FaVenus } from 'react-icons/fa';
 import { useState } from "react";
 import Link from 'next/link';
 
@@ -103,11 +103,15 @@ export default function Page () {
                   {( gender == "Female" &&<h1 className="font-bold text-sm text-pink-500 justify-center flex">Female</h1>)}
                {( gender == "Male" && <h1 className="font-bold text-sm text-blue-900 justify-center flex">Male</h1>)}
                 </div>
-                <div className='m-2 w-[200px]'>
-               <Link href="/" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2">
-      Normal Structure
-      </Link>
-                </div>
+
+                 <div className='m-2 w-[300px] flex'>
+                            <Link href="/" className="text-black bg-[#4ADE80] rounded-lg m-5 p-2  transition duration-300 hover:bg-[#22c55e]">
+                            <span className="flex items-center gap-1">
+                            Normal Structure
+                          <FaArrowRight className="mt-[1px]" />
+                        </span>
+                      </Link>
+                      </div>
                 
                  {/* Male Structure */}
                 {( gender == "Male"  &&  
@@ -3462,6 +3466,7 @@ export default function Page () {
  {( gender == "Female" &&
           <section id="section1" className="ml-4 mt-4 w-full">
             <svg viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg">
+             
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 154.5 30 L 157 30.5 L 154.5 31 L 154.5 30 Z " />
 
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 155.5 32 L 158 32.5 L 155.5 33 L 155.5 32 Z " />
@@ -3894,6 +3899,7 @@ export default function Page () {
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 546.5 173 L 547.5 175 L 546.5 173 Z " />
 
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 127.5 174 L 136 181 L 135.5 183 L 127.5 174 Z " />
+              
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 135.5 174 L 138 174.5 L 135.5 175 L 135.5 174 Z " />
 
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 182.5 174 L 185 174.5 L 182.5 175 L 182.5 174 Z " />
@@ -5403,11 +5409,20 @@ export default function Page () {
 
               <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 102.5 558 L 101.5 560 L 100 559.5 L 102.5 558 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 158.5 32 L 167.5 32 L 182 39 Q 187.9 45.9 191 56.5 L 192 61.5 L 192 76.5 L 188 91.5 L 179.5 106 Q 176.9 106.8 178 103.5 Q 175.5 102 177 96.5 L 180.5 89 Q 184.5 89.5 185 86.5 L 187 83.5 L 188 76.5 L 185.5 72 Q 181.3 73.3 183 68.5 Q 180.8 59.7 175.5 54 Q 172.9 53.2 174 56.5 L 178 62.5 L 176.5 63 L 162 52.5 L 159.5 49 Q 156.9 48.2 158 51.5 L 165.5 60 L 148 55 L 149 57.5 L 144.5 61 L 144 59.5 L 145 57 L 140 60.5 L 135.5 72 L 133 73.5 L 132 80.5 Q 133.3 86.3 137.5 89 Q 140.8 87.9 140 90.5 Q 143.8 95.2 142 105.5 L 141 105.5 L 137 99.5 L 132 86.5 L 130 66.5 L 131 65.5 L 131 57.5 L 134 47.5 L 141.5 39 L 143.5 38 L 146 39 Q 144.5 35.2 147.5 36 L 149.5 34 L 158.5 32 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 158.5 32 L 167.5 32 L 182 39 Q 187.9 45.9 191 56.5 L 192 61.5 L 192 76.5 L 188 91.5 L 179.5 106 Q 176.9 106.8 178 103.5 Q 175.5 102 177 96.5 L 180.5 89 Q 184.5 89.5 185 86.5 L 187 83.5 L 188 76.5 L 185.5 72 Q 181.3 73.3 183 68.5 Q 180.8 59.7 175.5 54 Q 172.9 53.2 174 56.5 L 178 62.5 L 176.5 63 L 162 52.5 L 159.5 49 Q 156.9 48.2 158 51.5 L 165.5 60 L 148 55 L 149 57.5 L 144.5 61 L 144 59.5 L 145 57 L 140 60.5 L 135.5 72 L 133 73.5 L 132 80.5 Q 133.3 86.3 137.5 89 Q 140.8 87.9 140 90.5 Q 143.8 95.2 142 105.5 L 141 105.5 L 137 99.5 L 132 86.5 L 130 66.5 L 131 65.5 L 131 57.5 L 134 47.5 L 141.5 39 L 143.5 38 L 146 39 Q 144.5 35.2 147.5 36 L 149.5 34 L 158.5 32 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 457.5 32 L 470 34 Q 468.9 36.7 471.5 36 Q 480.8 39.2 486 46.5 L 491 57.5 L 492 72.5 L 486 95.5 L 478.5 106 L 478 103.5 L 479 102.5 L 479 93.5 Q 473.8 85.9 462 86 L 461 70 L 458 70.5 L 458 80.5 L 457 86 L 454 86 L 454 79.5 L 453 76 Q 449.3 74.7 451 80.5 Q 448.8 81.8 450 86.5 L 448.5 88 L 442 92.5 Q 439.7 95.7 441 102.5 L 442 105.5 L 437 101.5 L 430 86.5 L 428 76.5 L 428 62.5 L 431 50.5 L 442.5 37 L 445.5 35 L 457.5 32 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 457.5 32 L 470 34 Q 468.9 36.7 471.5 36 Q 480.8 39.2 486 46.5 L 491 57.5 L 492 72.5 L 486 95.5 L 478.5 106 L 478 103.5 L 479 102.5 L 479 93.5 Q 473.8 85.9 462 86 L 461 70 L 458 70.5 L 458 80.5 L 457 86 L 454 86 L 454 79.5 L 453 76 Q 449.3 74.7 451 80.5 Q 448.8 81.8 450 86.5 L 448.5 88 L 442 92.5 Q 439.7 95.7 441 102.5 L 442 105.5 L 437 101.5 L 430 86.5 L 428 76.5 L 428 62.5 L 431 50.5 L 442.5 37 L 445.5 35 L 457.5 32 Z " />
 
-              <path fill="rgb(231,236,239)" stroke="rgb(231,236,239)" stroke-width="1" opacity="1" d="M 151.5 59 L 173.5 65 L 180 69.5 L 181 79.5 L 174 97.5 L 169.5 102 L 163.5 105 L 156.5 105 L 147 100 L 139 81.5 L 139 71.5 L 142 65 L 151.5 59 Z " />
+              <path
+            className="body-muscle-y"
+            style={{ opacity: 1 }}
+            fill="#fff" d="M 151.5 59 L 173.5 65 L 180 69.5 L 181 79.5 L 174 97.5 L 169.5 102 L 163.5 105 L 156.5 105 L 147 100 L 139 81.5 L 139 71.5 L 142 65 L 151.5 59 Z " />
 
               <path
             className="body-muscle-y"
