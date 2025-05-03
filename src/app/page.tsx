@@ -1,11 +1,9 @@
 'use client';
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { FaArrowRight, FaMars, FaVenus } from 'react-icons/fa';
 import { useState } from "react";
 import Link from "next/link";
-import { BiArrowFromRight } from "react-icons/bi";
 
 export default function Home() {
   const [gender, setGender] = useState<'Male' | 'Female'>('Male');

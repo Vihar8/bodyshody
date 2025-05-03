@@ -138,16 +138,16 @@ function DietPlan() {
 
         {/* Diet Plan Selection Tabs */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-md shadow-sm" role="group">
+          <div className="inline-flex rounded-lg overflow-hidden">
             {dietPlans.map((plan) => (
               <button
                 key={plan.id}
                 type="button"
-                className={`px-6 py-3 text-md font-semibold border ${
+                className={`px-6 py-3 font-medium transition-all ${
                   activePlan === plan.id
-                    ? 'bg-black text-white border-[#4ade80]'
-                    : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-100'
-                } focus:z-10 focus:ring-2 focus:ring-[#4ade80] focus:text-white first:rounded-l-lg last:rounded-r-lg`}
+                    ? "bg-green-400 text-black"
+                    : "bg-gray-800 text-white hover:bg-gray-700"
+                }`}
                 onClick={() => setActivePlan(plan.id)}
               >
                 {plan.title}
@@ -155,6 +155,7 @@ function DietPlan() {
             ))}
           </div>
         </div>
+
 
         {/* Active Diet Plan */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">

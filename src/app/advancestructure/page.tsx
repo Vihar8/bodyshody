@@ -116,9 +116,8 @@ export default function Page() {
 
         {/* Male Structure */}
         {(gender == "Male" &&
-          <div id="svgContainer" className="ml-4 mt-4 w-full">
+          <div id="svgContainer" className="ml-4 mt-4 w-full scale-70">
             {/* line color reason bug bug*/}
-            <g transform="scale(0.8)">
               <svg viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
                 <path fill="rgb(229,234,237)" stroke="rgb(229,234,237)" stroke-width="1" opacity="1" d="M 162.5 26 L 165 26.5 L 162.5 27 L 162.5 26 Z " />
@@ -3461,15 +3460,13 @@ export default function Page() {
                   style={{ opacity: 1 }}
                   fill="#000000" d="M 165 244 L 167 244.5 L 167 276 L 165 275.5 L 165 244 Z " />
               </svg>
-            </g>
           </div>)}
 
 
 
         {/* Female Structure */}
         {(gender == "Female" &&
-          <div id="svgContainer" className="ml-4 mt-4 w-full">
-            <g transform="scale(0.8)">
+          <div id="svgContainer" className="ml-4 mt-4 w-full scale-70">
               <svg viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
                 <path fill="rgb(224,226,229)" stroke="rgb(224,226,229)" stroke-width="1" opacity="1" d="M 154.5 30 L 157 30.5 L 154.5 31 L 154.5 30 Z " />
@@ -6116,11 +6113,9 @@ export default function Page() {
                       className="body-muscle-y"
                       style={{ opacity: 1 }}
                       fill="#e8e8e8" d="M 505.5 518 Q 508.1 521.4 515.5 520 L 518 519 L 520 530.5 L 520 539.5 L 523 544 L 532 548.5 Q 526.8 554.8 518.5 558 L 512.5 558 L 508.5 557 L 506 554.5 L 505 550.5 L 506 549.5 L 506 533.5 L 505 529.5 Q 507.5 528 506 522.5 L 505.5 518 Z " /></g></a>
-              </svg>
-            </g>
+              </svg>          
           </div>
         )}
-
       </div>
     </>
   );
