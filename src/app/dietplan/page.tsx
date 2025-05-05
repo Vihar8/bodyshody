@@ -157,7 +157,7 @@ function DietPlan() {
 
         {/* Active Diet Plan */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="bg-black text-white p-6">
+          <div className="bg-gray-900 text-white p-6">
             <h2 className="text-2xl font-bold">{activePlanDetails ? activePlanDetails.title : 'Plan Not Found'}</h2>
             <p className="text-blue-100 mt-2">{activePlanDetails ? activePlanDetails.description : 'No description available.'}</p>
           </div>
@@ -183,7 +183,7 @@ function DietPlan() {
                       <ul className="space-y-2">
                         {meal.items.map((item, i) => (
                           <li key={i} className="flex items-start">
-                            <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-black border-[3px] border-[#4ade80] text-white text-xs font-medium mr-3">
+                            <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500 border-[3px] border-[#000] text-white text-xs font-medium mr-3">
                               {i + 1}
                             </span>
                             <span className="text-gray-900 mb-4">{item.replace(/^\d+\.\s/, '')}</span>
