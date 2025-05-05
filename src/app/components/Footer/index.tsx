@@ -21,7 +21,7 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4 text-white">What We Do</h2>
           <p className="text-sm text-white leading-relaxed mb-2">
-            At <span className="font-semibold text-yellow-400">Body Shody</span>, we simplify fitness for everyone.
+            At <span className="font-semibold text-green-500">Body Shody</span>, we simplify fitness for everyone.
             Whether you're a beginner or a seasoned athlete, our platform helps you train smarter with:
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm text-white pl-2">
