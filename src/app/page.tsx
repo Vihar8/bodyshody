@@ -4016,7 +4016,7 @@ export default function Home() {
 
 
               {/* traps */}
-              <a href="/forearm">
+              <a href="/traps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4028,7 +4028,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 185.5 103 L 190.5 107 Q 200.5 109 207 114.5 L 191.5 118 L 186 113.5 L 185.5 103 Z " /></g></a>
 
               {/* backtraps */}
-              <a href="/">
+              <a href="/traps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4036,7 +4036,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 445.5 107 L 485.5 107 L 494.5 109 L 508 115.5 L 502.5 117 L 491.5 126 L 484.5 126 L 475.5 124 L 455.5 124 L 447.5 126 L 439.5 126 Q 434.1 118.4 424 115.5 Q 432.8 109.3 445.5 107 Z " /></g></a>
 
               {/* front shoulder */}
-              <a href="/forearm">
+              <a href="/shoulder">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4049,7 +4049,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 120.5 118 Q 130.2 116.3 135 119.5 Q 125 123 120 131.5 L 104.5 149 L 100 151 Q 101.6 132.5 113.5 123 L 120.5 118 Z " /></g></a>
 
               {/* mid shoulder */}
-              <a href="/forearm">
+              <a href="/shoulder">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4063,7 +4063,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 110.5 119 L 114 119.5 L 102 133.5 L 99 140.5 L 97 153 Q 89.7 152.2 85.5 156 L 86 154.5 L 91 137.5 Q 94.1 129.1 100.5 124 L 110.5 119 Z " /></g></a>
 
               {/* med shoulder */}
-              <a href="/forearm">
+              <a href="/shoulder">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4078,7 +4078,7 @@ export default function Home() {
 
 
               {/* upper chest */}
-              <a href="/forearm">
+              <a href="/chest">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4094,7 +4094,7 @@ export default function Home() {
 
 
               {/* backs shoulder */}
-              <a href="/forearm">
+              <a href="/shoulder">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4109,7 +4109,7 @@ export default function Home() {
                 </g></a>
 
               {/* mid chest */}
-              <a href="/forearm">
+              <a href="/chest">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4122,7 +4122,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 171.5 121 L 178.5 124 L 205.5 145 Q 214.2 150.8 226 153.5 L 222.5 155 L 206.5 169 Q 199.3 172.8 186.5 171 Q 175.6 167.9 170 159.5 L 167 153.5 L 167 126.5 L 171.5 121 Z " /></g></a>
 
               {/* lats */}
-              <a href="/forearm">
+              <a href="/lats">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4135,7 +4135,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 496.5 126 L 517.5 143 L 524 146 Q 525.9 148.7 525 155.5 Q 521.6 163.1 523 175.5 L 518 190.5 L 510 206.5 Q 511.2 211.3 509 212.5 L 509 238.5 L 510 239.5 L 510 247.5 L 512 257.5 L 507.5 254 L 492 246 L 490 241.5 L 489 219.5 L 477 195.5 L 474 178.5 L 480 158.5 L 496.5 126 Z " /></g></a>
 
               {/* mid back */}
-              <a href="/forearm">
+              <a href="/trapsmiddle">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4143,7 +4143,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 461.5 126 L 479.5 127 L 490.5 129 L 492 128.5 L 479 156 L 472.5 155 L 458.5 155 L 453.5 156 L 440 129.5 L 452.5 127 L 460.5 127 L 461.5 126 Z " /></g></a>
 
               {/* outer triceps */}
-              <a href="/forearm">
+              <a href="/triceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4157,7 +4157,7 @@ export default function Home() {
 
 
               {/* inner triceps */}
-              <a href="/forearm">
+              <a href="/triceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4170,7 +4170,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 528.5 150 L 543 172.5 Q 545.3 177.3 544 185.5 L 541.5 194 L 526 172.5 L 525 166.5 L 528.5 150 Z " /></g></a>
 
               {/* outer biceps */}
-              <a href="/forearm">
+              <a href="/biceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4183,7 +4183,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 237 156 Q 244.7 156 249 160.5 Q 256.1 168.9 260 180.5 L 263 191.5 L 263 198.5 L 260.5 203 L 254 190.5 L 241 172.5 L 237 164.5 L 237 156 Z " /></g></a>
 
               {/* outer biceps */}
-              <a href="/forearm">
+              <a href="/biceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4196,7 +4196,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 225.5 157 L 230 160.5 L 256 198.5 L 258 203.5 Q 257.5 206.5 253.5 206 Q 244.4 203.5 240 196.5 Q 234 186 225 178.5 Q 220.8 172.7 222 161.5 L 225.5 157 Z " /></g></a>
 
               {/* v back */}
-              <a href="/forearm">
+              <a href="/trapsmiddle">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4204,7 +4204,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 454 158 L 478 158.5 Q 472.3 167.3 470 179.5 L 466.5 184 Q 463.2 185.1 464 182.5 L 462 180.5 L 454 158 Z " /></g></a>
 
               {/* oblique */}
-              <a href="/forearm">
+              <a href="/obliques">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4217,7 +4217,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 219.5 161 L 220 164.5 L 219 166.5 L 220 167.5 L 221 178.5 Q 216.6 195.6 208 208.5 Q 205.2 217.2 207 230.5 L 208 231.5 L 209 248.5 L 210 249.5 L 202.5 250 L 198 246.5 L 194 239.5 L 193 228.5 L 194 227.5 L 194 211.5 L 191 197.5 L 191 189.5 L 203.5 176 L 219.5 161 Z " /></g></a>
 
               {/* mid head triceps */}
-              <a href="/forearm">
+              <a href="/triceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4228,8 +4228,9 @@ export default function Home() {
                     className="body-muscle-y"
                     style={{ opacity: 1 }}
                     fill="#e8e8e8" d="M 542.5 166 Q 553.6 168.4 559 176.5 L 568 189.5 L 568 193 L 558 192 L 556 204 Q 547.9 203.2 544 196.5 L 547 183.5 L 547 177.5 L 542.5 166 Z " /></g></a>
-
-              <a href="/forearm">
+              
+              {/* abs */}
+              <a href="/abs">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4237,7 +4238,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 159.5 169 L 164 171.5 L 165.5 174 Q 168.1 174.8 167 171.5 L 168.5 170 L 177.5 170 Q 185.3 171.7 190 176.5 Q 190.9 184.9 188 189.5 L 188 218.5 L 187 219.5 L 186 245.5 L 183 257.5 Q 178.1 270.1 169.5 279 L 163.5 280 L 160 278 L 150 260.5 L 146 247.5 L 145 229.5 L 144 228.5 L 143 186.5 L 141 177.5 L 150.5 171 L 159.5 169 Z M 166 177 Q 163 178 164 184 L 163 185 L 147 187 L 145 190 L 150 189 L 150 191 L 156 190 Q 162 188 164 192 Q 163 197 167 195 Q 166 191 170 190 Q 176 188 178 191 Q 182 192 181 190 L 183 190 Q 188 192 187 188 L 181 186 L 168 185 L 167 183 Q 168 176 166 177 Z M 166 198 L 164 200 L 165 202 L 164 207 L 162 208 L 146 208 L 146 211 Q 151 209 150 213 L 157 213 L 158 212 Q 163 211 164 214 Q 162 220 167 218 Q 166 213 170 212 L 175 213 Q 182 215 181 211 Q 185 212 186 210 L 185 208 L 171 208 L 167 206 L 167 199 L 166 198 Z M 166 221 Q 162 222 164 229 L 163 230 Q 153 231 147 229 L 147 232 Q 151 231 150 234 L 164 236 L 165 242 Q 169 243 167 238 L 171 235 L 179 235 L 180 234 Q 182 235 181 232 L 185 232 L 185 229 L 181 230 L 170 230 L 167 228 Q 168 220 166 221 Z M 166 244 L 164 246 L 164 275 L 167 276 L 167 245 L 166 244 Z " /></g></a>
 
               {/* lower biceps */}
-              <a href="/forearm">
+              <a href="/biceps">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4303,7 +4304,7 @@ export default function Home() {
               <path fill="rgb(235,235,235)" stroke="rgb(235,235,235)" stroke-width="1" opacity="1" d="M 165.5 231 L 172 232.5 L 164.5 234 L 160 232.5 L 165.5 231 Z " />
 
               {/* upper Glutes */}
-              <a href="/forearm">
+              <a href="/glutes">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4316,7 +4317,7 @@ export default function Home() {
 
 
               {/* Glutes */}
-              <a href="/forearm">
+              <a href="/glutes">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4330,7 +4331,7 @@ export default function Home() {
 
 
               {/* inner quads */}
-              <a href="/forearm">
+              <a href="/quads">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4343,7 +4344,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 206.5 254 L 206 255.5 L 203 259.5 L 198 274.5 L 196 292.5 L 195 293.5 L 194 309.5 L 193 310.5 L 193 317.5 L 190 331.5 L 187 340.5 L 180 350.5 L 178.5 355 L 170 330.5 L 168 320.5 L 168 308 L 175 302.5 L 184 276.5 Q 187.7 266.2 195.5 260 L 206.5 254 Z " /></g></a>
 
               {/* hamstrig outer */}
-              <a href="/forearm">
+              <a href="/hamstrings">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4361,7 +4362,7 @@ export default function Home() {
                 fill="#fff" d="M 135.5 256 L 151 267 L 152 270.5 L 159.5 280 L 166.5 283 L 169.5 282 L 177 274.5 L 182.5 266 L 194.5 257 L 188 264.5 L 182 274.5 L 176 294.5 L 169.5 305 L 164.5 306 L 160 304 L 154 290.5 L 150 275.5 Q 146 264.5 137.5 258 L 135.5 256 Z " />
 
               {/* outer quads */}
-              <a href="/forearm">
+              <a href="/quads">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4401,7 +4402,7 @@ export default function Home() {
               </a>
 
               {/* mid quads */}
-              <a href="/forearm">
+              <a href="/quads">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
@@ -4436,7 +4437,7 @@ export default function Home() {
                     fill="#e8e8e8" d="M 461.5 306 Q 464.5 305.5 463 312.5 L 459.5 330 L 455 318.5 Q 456 311 454 308 Q 459.8 309.5 461.5 306 Z " /></g></a>
 
               {/* medial hamstring */}
-              <a href="/forearm">
+              <a href="/hamstrings">
                 <g className="body-muscle-pair">
                   <path
                     className="body-muscle-y"
