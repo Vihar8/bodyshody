@@ -1,9 +1,7 @@
 // pages/exercises/biceps.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 const bicepsExercises = [
@@ -43,7 +41,6 @@ const BicepsExercises = () => {
   return (
       <>
     <div className="min-h-screen bg-white text-black">
-      <Navbar />
       <main className="py-12 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
           {bicepsExercises.map((exercise, index) => (
@@ -65,8 +62,8 @@ const BicepsExercises = () => {
                     src={exercise.image}
                     alt={exercise.title}
                     className="w-full h-64 object-cover transition-transform duration-300  "
-                    width={600} // Set width
-                    height={256} // Set height
+                    width={400}
+                    height={300}
                   />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
               </div>
@@ -93,7 +90,6 @@ const BicepsExercises = () => {
         </div>
       </main>
     </div>
-    <Footer />
           </>
   );
 };

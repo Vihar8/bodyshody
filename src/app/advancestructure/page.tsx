@@ -82,7 +82,6 @@ export default function Page() {
     `,
           }}
         />
-        <Navbar />
         <div className="flex flex-col items-center space-y-2">
           {/* Toggle Switch */}
           <div

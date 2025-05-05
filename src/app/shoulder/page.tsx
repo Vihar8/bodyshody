@@ -1,9 +1,7 @@
 // pages/exercises/shoulder.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 const shoulderExercises = [
@@ -46,7 +44,6 @@ const ShoulderExercises = () => {
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {shoulderExercises.map((exercise, index) => (
@@ -96,7 +93,6 @@ const ShoulderExercises = () => {
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,9 +1,7 @@
 // pages/exercises/quads.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 // This could be the correct structure for all exercises, either `image` or `video`
@@ -52,7 +50,6 @@ const QuadsExercises = () => {
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {quadsExercises.map((exercise, index) => (
@@ -114,7 +111,6 @@ const QuadsExercises = () => {
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };

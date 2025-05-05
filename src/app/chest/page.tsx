@@ -1,9 +1,7 @@
 // pages/exercises/chest.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 const chestExercises = [
@@ -57,7 +55,6 @@ const ChestExercises = () => {
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {chestExercises.map((exercise, index) => (
@@ -119,7 +116,6 @@ const ChestExercises = () => {
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };

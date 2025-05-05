@@ -126,8 +126,6 @@ function DietPlan() {
         <meta name="description" content="Customized diet plans for muscle building, weight loss, and weight gain" />
       </Head>
       
-      <Navbar />
-      
       <main className="max-w-6xl mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-800 mb-4">Personalized Diet Plans</h1>
@@ -204,8 +202,6 @@ function DietPlan() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

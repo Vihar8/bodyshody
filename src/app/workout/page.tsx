@@ -1,8 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 export default function WorkoutPlan() {
   // Define a type for the keys of workout plans
@@ -222,8 +221,6 @@ export default function WorkoutPlan() {
         <meta name="description" content="Customized workout plans for all fitness levels" />
       </Head>
       
-      <Navbar />
-      
       <main className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-black">Workout Plans</h1>
@@ -303,7 +300,6 @@ export default function WorkoutPlan() {
           </div>
         </div>
       </main>    
-      <Footer />
     </div>
   );
 }

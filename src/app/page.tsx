@@ -1,9 +1,6 @@
 'use client';
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { FaArrowRight, FaMars, FaVenus } from 'react-icons/fa';
+import { FaMars, FaVenus } from 'react-icons/fa';
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Home() {
   const [gender, setGender] = useState<'Male' | 'Female'>('Male');
@@ -116,7 +113,6 @@ export default function Home() {
     `,
           }}
         />
-        <Navbar />
         <div className="flex flex-col items-center space-y-2">
           {/* Toggle Switch */}
           <div className='flex gap-5'>
@@ -7350,7 +7346,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

@@ -1,9 +1,7 @@
 // pages/exercises/glutes.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 
 const glutesExercises = [
   {
@@ -32,7 +30,6 @@ const GlutesExercises = () => {
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {glutesExercises.map((exercise, index) => (
@@ -82,7 +79,6 @@ const GlutesExercises = () => {
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };

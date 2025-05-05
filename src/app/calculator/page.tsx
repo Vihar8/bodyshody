@@ -1,12 +1,9 @@
 import BMICalculator from '../components/BMICalculator';
 import CalorieCalculator from '../components/CalorieCalculator';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
     <>
-     <Navbar /> 
     <div className="main-container">
       <section className="bmi-section">
         <h1>BODY MASS INDEX (BMI)</h1>
@@ -22,7 +19,6 @@ export default function Home() {
         <CalorieCalculator />
       </section>
     </div>
-    <Footer />
     </>
   );
 }

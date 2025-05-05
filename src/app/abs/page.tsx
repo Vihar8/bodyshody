@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const exercises = [
@@ -42,7 +40,6 @@ const Home = () => {
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {exercises.map((exercise, index) => (
@@ -94,7 +91,6 @@ const Home = () => {
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };

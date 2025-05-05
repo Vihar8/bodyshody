@@ -1,9 +1,7 @@
 // pages/exercises/shoulder.js
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 // Renamed back to "tricepsExercises"
@@ -50,7 +48,6 @@ const TricepsExercises = () => {  // Component name adjusted to TricepsExercises
   return (
     <>
       <div className="min-h-screen bg-white text-black">
-        <Navbar />
         <main className="py-12 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {tricepsExercises.map((exercise, index) => ( // Use the corrected name here
@@ -100,7 +97,6 @@ const TricepsExercises = () => {  // Component name adjusted to TricepsExercises
           </div>
         </main>
       </div>
-      <Footer />
     </>
   );
 };
