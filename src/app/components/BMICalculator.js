@@ -34,9 +34,10 @@ export default function BMICalculator() {
         />
         <button type="submit" className="submit-button">Submit</button>
       </form>
+      {bmi && (
       <div className="bmi-result">
         YOUR BMI = {bmi ? bmi : '[Not Entered]'}
-      </div>
+      </div>)}
       <div className="bmi-categories">
         <h3>BMI Categories:</h3>
         <ul>

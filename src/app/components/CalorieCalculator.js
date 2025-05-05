@@ -72,9 +72,9 @@ export default function CalorieCalculator() {
         </select>
         <button type="submit" className="submit-button">Submit</button>
       </form>
-      <div className="calorie-result">
+      {calories && (<div className="calorie-result">
         YOUR CALORIE NEEDING = {calories ? calories : '[Not Entered]'}
-      </div>
+      </div>)}
       <div className="guidelines">
         <h3>Guidelines:</h3>
         <ul>
