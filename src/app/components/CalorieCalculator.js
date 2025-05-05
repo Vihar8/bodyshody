@@ -23,24 +23,26 @@ export default function CalorieCalculator() {
     <div className="calorie-calculator">
       <h2>Calorie Needing Calculator</h2>
       <form onSubmit={calculateCalories}>
-        <div className="gender-selection">
-          <label>
-            <input
-              type="radio"
-              value="Male"
-              checked={gender === 'Male'}
-              onChange={() => setGender('Male')}
-            /> Male
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Female"
-              checked={gender === 'Female'}
-              onChange={() => setGender('Female')}
-            /> Female
-          </label>
+        <div className="gender-selection flex space-x-4">
+          {['Male', 'Female'].map((option) => (
+            <label
+              key={option}
+              className={`cursor-pointer px-4 py-2 rounded-full border 
+        ${gender === option ? 'bg-green-300 !text-black border-green-500' : 'bg-white !text-black border-gray-300'}
+        transition duration-300`}
+            >
+              <input
+                type="radio"
+                value={option}
+                checked={gender === option}
+                onChange={() => setGender(option)}
+                className="hidden"
+              />
+              {option}
+            </label>
+          ))}
         </div>
+
         <input
           type="number"
           placeholder="Age (15-80 years)"
