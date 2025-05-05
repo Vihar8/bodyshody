@@ -7289,77 +7289,12 @@ export default function Home() {
           </section>
         )}
 
-        <div className="bg-gray-50 p-8 rounded-lg shadow-lg w-full mx-auto">
+        {/* <div className="p-8 rounded-lg w-full mx-auto">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Master Your Muscle Groups</h1>
           <p className="text-gray-600 text-xl mb-8 border-b pb-4">Unlock your potential by targeting specific muscle groups with effective training strategies</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {muscleGroups.map((group, index) => (
-              <div key={index} className={`${group.color} p-6 rounded-lg shadow-md`}>
-                <div className="flex items-center mb-3">
-                  <span className="text-3xl mr-3">{group.icon}</span>
-                  <h2 className="text-2xl font-semibold text-gray-800">{group.name}</h2>
-                </div>
-                <p className="text-gray-700 font-medium mb-2">{group.primary}</p>
-                <ul className="space-y-1">
-                  {group.exercises.map((exercise, i) => (
-                    <li key={i} className="text-gray-600">{exercise}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-blue-50 p-6 rounded-lg mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">Training Principles</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-start">
-                <span className="text-2xl mr-2">🔄</span>
-                <div>
-                  <h3 className="font-medium text-gray-800">Rotate Muscle Groups</h3>
-                  <p className="text-gray-600">Allow 48-72 hours recovery between training the same muscles</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <span className="text-2xl mr-2">📈</span>
-                <div>
-                  <h3 className="font-medium text-gray-800">Progressive Overload</h3>
-                  <p className="text-gray-600">Gradually increase weight, reps or sets over time</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <span className="text-2xl mr-2">🧠</span>
-                <div>
-                  <h3 className="font-medium text-gray-800">Mind-Muscle Connection</h3>
-                  <p className="text-gray-600">Focus on feeling the target muscle working</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="flex-1 bg-green-50 p-6 rounded-lg">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Recovery Essentials</h2>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-600"><span className="mr-2">🛌</span> 7-9 hours quality sleep</li>
-                <li className="flex items-center text-gray-600"><span className="mr-2">🥗</span> Protein-rich nutrition</li>
-                <li className="flex items-center text-gray-600"><span className="mr-2">🧘</span> Active recovery & stretching</li>
-                <li className="flex items-center text-gray-600"><span className="mr-2">💧</span> Stay well hydrated</li>
-              </ul>
-            </div>
-
-            <div className="flex-1 bg-red-50 p-6 rounded-lg">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Getting Started</h2>
-              <p className="text-gray-600 mb-4">Begin with a balanced program targeting all major muscle groups:</p>
-              <ul className="space-y-1 text-gray-600">
-                <li>Start with 2-3 sessions per week</li>
-                <li>Focus on proper form over heavy weight</li>
-                <li>Include 5-10 minute warmup</li>
-                <li>Cool down with 5-10 minutes of stretching</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    
+        </div> */}
       </div>
     </>
   );
