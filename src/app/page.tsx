@@ -13,37 +13,6 @@ export default function Home() {
   const toggleGender = () => {
     setGender((prev) => (prev === 'Male' ? 'Female' : 'Male'));
   };
-
-  const muscleGroups = [
-    {
-      name: "Upper Body Power",
-      icon: "💪",
-      primary: "Chest, Shoulders & Triceps",
-      exercises: ["Bench Press", "Shoulder Press", "Dips"],
-      color: "bg-blue-100"
-    },
-    {
-      name: "Back Day Strength",
-      icon: "🏋️",
-      primary: "Back & Biceps",
-      exercises: ["Pull-ups", "Rows", "Curls"],
-      color: "bg-green-100"
-    },
-    {
-      name: "Lower Body Focus",
-      icon: "🏃",
-      primary: "Quads, Hamstrings & Glutes",
-      exercises: ["Squats", "Deadlifts", "Lunges"],
-      color: "bg-orange-100"
-    },
-    {
-      name: "Core Stability",
-      icon: "🧘",
-      primary: "Abs & Lower Back",
-      exercises: ["Planks", "Russian Twists", "Bird Dogs"],
-      color: "bg-purple-100"
-    }
-  ];
   return (
     <>
       <div className="bg-white">
