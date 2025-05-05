@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
                 href={item.href}
                 className={`flex items-center space-x-2 px-4 h-full transition-all duration-200 ${
                   pathname === item.href 
-                    ? 'bg-black text-white font-medium border-b-4 border-green-400' 
+                    ? 'bg-gray-800 text-white font-medium border-b-4 border-green-400' 
                     : 'hover:bg-gray-100'
                 }`}
                 aria-current={pathname === item.href ? 'page' : undefined}
@@ -198,7 +198,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 z-20 md:hidden" aria-hidden="true" />
+          <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-20 md:hidden" aria-hidden="true" />
         )}
 
         {/* Mobile Menu Panel */}
@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
                 href={item.href}
                 className={`flex items-center space-x-4 p-4 rounded-md transition-colors ${
                   pathname === item.href 
-                    ? 'bg-black text-white font-medium border-b-4 border-green-400' 
+                    ? 'bg-gray-800 text-white font-medium border-b-4 border-green-400' 
                     : 'hover:bg-gray-100'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
