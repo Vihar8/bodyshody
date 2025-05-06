@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const latsExercises = [
   {
-    title: "Pull-Ups",
+    title: "Barbell Rows",
     difficulty: "Intermediate",
     video: "/stock-footage-fitness-weightlifting-man-training-bent-over-row-or-barbell-row-fit-male-athlete-strength-training.mp4", // Replace with your video URL
     steps: [
