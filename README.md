@@ -8,7 +8,7 @@ Your Personal Fitness Journey Companion
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-[View Demo](https://body-shody.vercel.app) • [Report Bug](https://github.com/your-username/body-shody/issues) • [Request Feature](https://github.com/your-username/body-shody/issues)
+[View Demo](https://bodyshody.vercel.app) • [Report Bug](https://github.com/your-username/body-shody/issues) • [Request Feature](https://github.com/your-username/body-shody/issues)
 
 ![Body Shody Preview](https://via.placeholder.com/800x400)
 
