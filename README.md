@@ -48,12 +48,12 @@ Your Personal Fitness Journey Companion
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/body-shody.git
+https://github.com/Vihar8/bodyshody.git
 ```
 
 2. Navigate to project directory
 ```bash
-cd body-shody
+cd bodyshody
 ```
 
 3. Install dependencies
@@ -75,7 +75,7 @@ yarn dev
 ## 🛠 Tech Stack
 
 - **Frontend Framework:** Next.js
-- **Styling:** CSS Modules
+- **Styling:** Tailwind CSS
 - **Deployment:** Vercel
 - **Version Control:** Git
 - **Package Manager:** npm/yarn
